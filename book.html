@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Your Stay | Sebu Sanctuary, Lake Sebu</title>
+  <meta name="description" content="Book Sebu Sanctuary, a private retreat with a pool near Lake Sebu. Choose your dates, guests, airport pickup and extras, see your total and send a booking request.">
+  <meta name="theme-color" content="#1F5E3B">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Sebu Sanctuary home">
+        <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
+        <span class="brand-text">Sebu <em>Sanctuary</em></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
+        <a href="book.html" class="btn btn-sun nav-cta" aria-current="page">Book your stay</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero book-hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/pool/pool-hero.jpg" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow eyebrow-light">Book your stay</p>
+        <h1 class="page-title">Plan your stay.<br><em>See your total.</em></h1>
+        <p class="hero-lead">Choose your dates, guests and any extras. Your total updates as you go, then send your request. Pay nothing now, we confirm within 24 hours.</p>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING PLANNER ============ -->
+    <section class="section book" id="book">
+      <div class="container">
+
+        <div class="book-grid">
+          <form class="book-form" id="booking" novalidate>
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">1</span> Your dates</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-in">Check-in</label>
+                  <input id="bk-in" name="checkin" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="bk-out">Check-out</label>
+                  <input id="bk-out" name="checkout" type="date" required>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">2</span> Guests</legend>
+              <div class="field">
+                <label for="bk-guests">Number of guests</label>
+                <div class="stepper">
+                  <button type="button" class="step-btn" data-step="-1" aria-controls="bk-guests" aria-label="Fewer guests">−</button>
+                  <input type="number" id="bk-guests" name="guests" value="2" min="1" max="20" step="1" inputmode="numeric">
+                  <button type="button" class="step-btn" data-step="1" aria-controls="bk-guests" aria-label="More guests">+</button>
+                </div>
+                <p class="field-hint" id="bk-guest-hint"></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">3</span> Add extras <span class="opt">(optional)</span></legend>
+              <div class="extras">
+                <div class="extra extra-pickup">
+                  <div class="extra-text">
+                    <strong>Airport pickup from General Santos</strong>
+                    <span>Private car from GES airport to the sanctuary, about 2 to 2.5 hours.</span>
+                  </div>
+                  <select id="bk-pickup" name="pickup" aria-label="Airport pickup">
+                    <option value="none">No pickup</option>
+                    <option value="oneway">One way</option>
+                    <option value="return">Return trip</option>
+                  </select>
+                </div>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="breakfast">
+                  <div class="extra-text"><strong>Daily breakfast</strong><span>A warm Filipino breakfast every morning.</span></div>
+                  <span class="extra-price" data-price-for="breakfast"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="falls">
+                  <div class="extra-text"><strong>Seven Falls &amp; zipline trip</strong><span>Transport and a guided visit to the falls.</span></div>
+                  <span class="extra-price" data-price-for="falls"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="tboli">
+                  <div class="extra-text"><strong>Tboli cultural visit</strong><span>Meet local weavers and musicians with a local guide.</span></div>
+                  <span class="extra-price" data-price-for="tboli"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="photo">
+                  <div class="extra-text"><strong>Photo walk with Kingsley</strong><span>Learn to capture Lake Sebu with a professional photographer of 25+ years.</span></div>
+                  <span class="extra-price" data-price-for="photo"></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">4</span> Your details</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-name">Full name</label>
+                  <input id="bk-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label for="bk-email">Email</label>
+                  <input id="bk-email" name="email" type="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-phone">Phone / WhatsApp <span class="opt">(optional)</span></label>
+                  <input id="bk-phone" name="phone" type="tel" autocomplete="tel">
+                </div>
+                <div class="field">
+                  <label for="bk-from">Travelling from</label>
+                  <select id="bk-from" name="from">
+                    <option>Within the Philippines</option>
+                    <option>Australia</option>
+                    <option>Another country</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="bk-msg">Anything we should know? <span class="opt">(optional)</span></label>
+                <textarea id="bk-msg" name="message" rows="3" placeholder="Flight times, celebrations, dietary needs…"></textarea>
+              </div>
+            </fieldset>
+          </form>
+
+          <aside class="book-summary" aria-live="polite">
+            <div class="sum-card">
+              <p class="sum-eyebrow">Your stay</p>
+              <p class="sum-dates" id="sum-dates">Choose your dates</p>
+              <ul class="sum-lines" id="sum-lines"></ul>
+              <div class="sum-total">
+                <span>Total</span>
+                <strong id="sum-total">₱0</strong>
+              </div>
+              <p class="sum-sample" id="sum-sample" hidden>Sample rates shown for preview. Final rates to be confirmed.</p>
+              <button type="submit" form="booking" class="btn btn-sun btn-lg btn-block">Request to book</button>
+              <button type="button" class="btn btn-wa btn-block" id="book-wa">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.2 1.1-1.7 1.2-.5 0-1 .3-3.3-.7a10.6 10.6 0 0 1-4.1-3.7c-.3-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1 .9 1.9 1.2 2.2 1.3.3.2.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.1z"/></svg>
+                Send on WhatsApp
+              </button>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <p class="sum-note">Pay nothing now. Your host checks availability and confirms your booking personally.</p>
+              <ul class="sum-perks">
+                <li>No booking fees</li>
+                <li>A personal host</li>
+                <li>Flexible extras</li>
+              </ul>
+            </div>
+
+            <div class="sum-contact">
+              <p><strong>Questions first?</strong> Message us. We usually reply within 24 hours.</p>
+              <div class="chat-buttons">
+                <a class="chip chip-dark" href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="chip chip-dark" href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+                <a class="chip chip-dark" href="mailto:sebusantuary@me.com" data-contact="email">Email</a>
+              </div>
+              <p class="sum-where">Lake Seloton, near Lake Sebu, South Cotabato</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GOOD TO KNOW ============ -->
+    <section class="section book-info">
+      <div class="container book-info-grid">
+        <div class="bi-item reveal">
+          <h3>Getting here</h3>
+          <p>Fly into General Santos, then it's a scenic 2.5 hour drive up the mountain. Add our airport pickup and we'll meet you at arrivals.</p>
+          <a href="index.html#getting-here" class="link-arrow">How to get here <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="bi-item reveal">
+          <h3>What's included</h3>
+          <p>The whole house for your group: three bedrooms, the private pool, kitchen, dining with a view and the gym.</p>
+          <a href="index.html#stay" class="link-arrow">See the stay <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="bi-item reveal">
+          <h3>Questions first?</h3>
+          <p>Message us any time. We'll help you plan dates, meals and day trips before you book.</p>
+          <a href="https://wa.me/639000000000" data-contact="whatsapp" class="link-arrow" target="_blank" rel="noopener">Message us on WhatsApp <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-footer">
+        <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
+          <span class="brand-text">Sebu <em>Sanctuary</em></span>
+        </a>
+        <p class="footer-tag">A private retreat at Lake Seloton, near Lake Sebu, South Cotabato, Philippines.<br><em>Live well. Be well. All of life.</em></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+        <a href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+        <a href="https://www.facebook.com/profile.php?id=61592510867921" data-contact="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:sebusantuary@me.com" data-contact="email">sebusantuary@me.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Sebu Sanctuary. All rights reserved.</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky booking bar -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-outline-lagoon" target="_blank" rel="noopener">Message us</a>
+    <a href="#book" class="btn btn-sun">Book your stay</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+    <button class="lb-close" id="lb-close" aria-label="Close gallery">×</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

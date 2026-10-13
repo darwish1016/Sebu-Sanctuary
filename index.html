@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sebu Sanctuary | Private Retreat &amp; Infinity Pool near Lake Sebu</title>
-  <meta name="description" content="Sebu Sanctuary is a private retreat at Lake Seloton, near Lake Sebu in South Cotabato, Philippines, with comfortable rooms, an infinity pool with mountain views and fresh farm-to-table meals. Book directly with our host, JM.">
+  <title>Sebu Sanctuary | Private Retreat with a Pool near Lake Sebu, Philippines</title>
+  <meta name="description" content="Sebu Sanctuary is a private retreat at Lake Seloton, near Lake Sebu in South Cotabato, Philippines. Three comfortable bedrooms, a pool with mountain views, farm-to-table meals, airport pickup from General Santos and a personal host. Book direct.">
   <meta name="theme-color" content="#1F5E3B">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,13 +25,11 @@
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Main">
-        <a href="#stay">The Stay</a>
-        <a href="#pool">Infinity Pool</a>
-        <a href="#dining">Dining</a>
-        <a href="#menu">Menu</a>
-        <a href="about.html">About Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-sun nav-cta">Book your stay</a>
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
+        <a href="book.html" class="btn btn-sun nav-cta">Book your stay</a>
       </nav>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
@@ -45,36 +43,35 @@
     <!-- ============ HERO ============ -->
     <section class="hero" id="home">
       <div class="hero-media" aria-hidden="true">
-        <img src="images/pool/infinity-pool-hero.jpg" alt="" fetchpriority="high">
+        <img src="images/pool/pool-hero.jpg" alt="" fetchpriority="high">
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="container hero-content">
-        <p class="eyebrow eyebrow-light">Private retreat · Lake Sebu, Philippines</p>
         <h1 class="hero-title">
           Slow mornings.<br>
           Mountain air.<br>
           <em>Your own sanctuary.</em>
         </h1>
         <p class="hero-lead">
-          Comfortable rooms, an infinity pool overlooking the valley, and fresh farm-to-table meals.
+          Comfortable rooms, a pool overlooking the valley and fresh farm-to-table meals.
           A peaceful place near Lake Sebu to rest, reset and reconnect.
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-sun btn-lg">Book your stay</a>
+          <a href="#book" class="btn btn-sun btn-lg">Book your stay</a>
           <a href="#stay" class="btn btn-ghost-light btn-lg">Explore the sanctuary</a>
         </div>
       </div>
 
-      <!-- Quick availability bar -->
-      <form class="booking-bar container" id="quick-book" aria-label="Check availability">
+      <!-- Quick availability bar: carries dates and guests into the booking planner -->
+      <form class="booking-bar container" id="quick-book" aria-label="Check your price">
         <div class="bb-field">
           <label for="qb-in">Check-in</label>
-          <input type="date" id="qb-in" name="checkin" required>
+          <input type="date" id="qb-in" name="checkin">
         </div>
         <div class="bb-field">
           <label for="qb-out">Check-out</label>
-          <input type="date" id="qb-out" name="checkout" required>
+          <input type="date" id="qb-out" name="checkout">
         </div>
         <div class="bb-field">
           <label for="qb-guests">Guests</label>
@@ -84,7 +81,7 @@
             <button type="button" class="step-btn" data-step="1" aria-controls="qb-guests" aria-label="More guests">+</button>
           </div>
         </div>
-        <button type="submit" class="btn btn-lagoon bb-submit">Check availability</button>
+        <button type="submit" class="btn btn-lagoon bb-submit">See your price</button>
       </form>
     </section>
 
@@ -93,29 +90,29 @@
       <div class="container highlights-grid">
         <div class="hl reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 12V5a2 2 0 0 1 4 0M16 12V5a2 2 0 0 0-4 0M8 8h8"/></svg>
-          <div><strong>Infinity pool</strong><span>Swim with a valley view</span></div>
+          <div><strong>The pool</strong><span>Swim with a valley view</span></div>
         </div>
         <div class="hl reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6M3 18h18M3 18v2M21 18v2M6 10V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3"/></svg>
-          <div><strong>Comfortable rooms</strong><span>Private, with mountain views</span></div>
+          <div><strong>Three bedrooms</strong><span>Private, with mountain views</span></div>
         </div>
         <div class="hl reveal">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v8a3 3 0 0 0 3 3v7M7 3v8M10 3v8a3 3 0 0 1-3 3M17 21V3c-2 0-4 2-4 6v5h4"/></svg>
           <div><strong>Farm-to-table</strong><span>Fresh, local Filipino food</span></div>
         </div>
         <div class="hl reveal">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg>
-          <div><strong>Personal host</strong><span>Book direct with JM</span></div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V9.5L7.5 5h9L19 9.5V16M5 16h14M5 16v2.5M19 16v2.5M5 11h14"/><circle cx="8" cy="13.5" r=".6"/><circle cx="16" cy="13.5" r=".6"/></svg>
+          <div><strong>Airport pickup</strong><span>From General Santos</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ============ WELCOME ============ -->
-    <section class="section welcome" id="about">
+    <!-- ============ OUR STORY ============ -->
+    <section class="section welcome" id="story">
       <div class="container welcome-grid">
         <div class="welcome-media reveal">
           <img class="wm-main" src="images/rooms/bedroom-one-view-tall.jpg" alt="View of the pool and mountains through the glass doors of Bedroom One" loading="lazy">
-          <img class="wm-accent" src="images/views/butterfly-1.jpg" alt="A butterfly resting on a dewy leaf" loading="lazy" style="object-position: 35% 50%">
+          <img class="wm-accent" src="images/culture/overlooking-lake-seloton.jpg" alt="Looking out over Lake Seloton from the hills near the sanctuary" loading="lazy">
           <div class="wm-badge" aria-hidden="true">
             <span class="wm-badge-top">Live well</span>
             <span class="wm-badge-big">Be well</span>
@@ -123,23 +120,17 @@
           </div>
         </div>
         <div class="welcome-copy reveal">
-          <p class="eyebrow">Welcome to Sebu Sanctuary</p>
-          <h2 class="section-title">A quiet place to <em>breathe</em>, high above the valley.</h2>
+          <h2 class="section-title">Your own corner<br><em>of Lake Sebu.</em></h2>
           <p>
-            Sebu Sanctuary is a private retreat at Lake Seloton, near Lake Sebu in South Cotabato.
-            Wake up to mist lifting off the mountains, spend the afternoon at the edge of the infinity pool,
-            and gather for a fresh, home-cooked dinner as the hills turn gold.
-          </p>
-          <p>
-            Whether you're coming from General Santos, Manila or the other side of the world,
-            this is your home for a few slow, restful days, with good food, fresh air and genuine Filipino hospitality.
+            Wake up to mountain air, swim with a view of the valley, and spend your days at waterfalls,
+            lakes and Tboli villages. Then come home to a quiet house that's all yours.
           </p>
           <ul class="tick-list">
-            <li>Exclusive, private stay with no strangers sharing the pool</li>
-            <li>Ideal for families, couples, barkada and wellness getaways</li>
-            <li>Close to Lake Sebu's Seven Falls and local markets</li>
+            <li>Just you and your group, no strangers</li>
+            <li>Home-cooked Filipino meals</li>
+            <li>A local host to help plan every day</li>
           </ul>
-          <a href="#stay" class="link-arrow">See the spaces <span aria-hidden="true">→</span></a>
+          <a href="about.html" class="link-arrow">Read our story <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
@@ -148,61 +139,95 @@
     <section class="section stay" id="stay">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">The Stay</p>
           <h2 class="section-title">Every corner, made for <em>rest</em>.</h2>
-          <p class="section-sub">Tap any space to view more photos.</p>
+          <p class="section-sub">Tap any space to see more photos.</p>
         </div>
 
-        <div class="bento">
+        <div class="bento bento-6">
           <button class="tile tile-rooms reveal" data-gallery="rooms">
-            <img src="images/rooms/bedroom-one-view.jpg" alt="Bedroom One with glass doors opening onto the pool and mountains" loading="lazy">
-            <span class="tile-label"><small>Accommodation</small>Bedrooms</span>
-            <span class="tile-count">3 photos</span>
+            <img src="images/rooms/bedroom-two-looking-in.jpg" alt="Bedroom Two seen from the garden through tall glass doors" loading="lazy">
+            <span class="tile-label"><small>Accommodation</small>Three Bedrooms</span>
+            <span class="tile-count">7 photos</span>
           </button>
-
           <button class="tile tile-pool reveal" data-gallery="pool">
-            <img src="images/pool/infinity-pool.jpg" alt="The infinity pool beside the white villa under a blue sky" loading="lazy" style="object-position: 50% 85%">
-            <span class="tile-label"><small>Relax</small>Infinity Pool</span>
-            <span class="tile-count">3 photos</span>
+            <img src="images/pool/pool-from-deck.jpg" alt="The pool and mountains seen from the deck" loading="lazy">
+            <span class="tile-label"><small>Relax</small>The Pool</span>
+            <span class="tile-count">7 photos</span>
           </button>
-
           <button class="tile tile-cr reveal" data-gallery="cr">
-            <img src="images/bathrooms/cr-bedroom-one-1.jpg" alt="Comfort room with a timber vanity, stone basin and garden window" loading="lazy">
+            <img src="images/bathrooms/cr-bedroom-three-basin.jpg" alt="Comfort room with a stone basin and timber ceiling" loading="lazy">
             <span class="tile-label"><small>Bathrooms</small>Comfort Rooms</span>
+            <span class="tile-count">6 photos</span>
+          </button>
+          <button class="tile tile-dining reveal" data-gallery="dining">
+            <img src="images/kitchen/breakfast-near-pool.jpg" alt="Breakfast served at a table beside the pool" loading="lazy">
+            <span class="tile-label"><small>Gather</small>Dining</span>
             <span class="tile-count">4 photos</span>
           </button>
-
-          <button class="tile tile-dining reveal" data-gallery="dining">
-            <img src="images/views/guest-enjoying-view.jpg" alt="A guest at the dining table looking out over the valley" loading="lazy">
-            <span class="tile-label"><small>Gather</small>Dining</span>
-            <span class="tile-count">2 photos</span>
-          </button>
-
           <button class="tile tile-kitchen reveal" data-gallery="kitchen">
-            <img src="images/kitchen/kitchen-view.jpg" alt="The open kitchen with plants and a view of the hills" loading="lazy">
+            <img src="images/kitchen/kitchen-lookout-bench.jpg" alt="The kitchen bench looking out to the garden" loading="lazy">
             <span class="tile-label"><small>Cook</small>Kitchen</span>
-            <span class="tile-count">1 photo</span>
+            <span class="tile-count">3 photos</span>
+          </button>
+          <button class="tile tile-gym reveal" data-gallery="gym">
+            <img src="images/gym/gym-1.jpg" alt="The home gym with a view of the garden" loading="lazy">
+            <span class="tile-label"><small>Move</small>Gym</span>
+            <span class="tile-count">2 photos</span>
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ============ INFINITY POOL FEATURE ============ -->
+    <!-- ============ THE POOL ============ -->
     <section class="pool-feature" id="pool">
-      <figure class="pool-photo">
-        <img src="images/pool/guest-relaxing-pool.jpg" alt="A guest sitting at the edge of the infinity pool at sunset, with the mountains beyond" loading="lazy">
-        <figcaption>Sunset at the pool's edge</figcaption>
-      </figure>
-      <div class="pool-content reveal">
-        <p class="eyebrow eyebrow-light">The Infinity Pool</p>
+      <div class="pool-bg" aria-hidden="true">
+        <img src="images/pool/pool-from-deck-lg.jpg" alt="" loading="lazy">
+      </div>
+      <div class="container pool-top reveal">
+        <p class="eyebrow eyebrow-light">The pool</p>
         <h2 class="pool-title">Where the water<br><em>meets the mountains.</em></h2>
-        <p>Float at the edge of the infinity pool with the valley stretching out below, watch the sun sink behind the hills, and take a late swim under the stars.</p>
+        <p class="pool-lead">Float at the edge with the valley stretching out below, watch the sun sink behind the hills, and take a late swim under the stars.</p>
+      </div>
+      <div class="container pool-bottom reveal">
         <ul class="pool-facts">
           <li><strong>Valley</strong><span>&amp; mountain views</span></li>
           <li><strong>Sunset</strong><span>swims at golden hour</span></li>
           <li><strong>Private</strong><span>for your group only</span></li>
         </ul>
-        <a href="#stay" class="link-arrow link-arrow-light" data-open-gallery="pool">See more of the pool <span aria-hidden="true">→</span></a>
+        <button class="pool-more" type="button" data-open-gallery="pool">See 7 photos of the pool <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <!-- ============ MEET YOUR HOST ============ -->
+    <section class="section host" id="host">
+      <div class="container host-grid">
+        <div class="host-snaps reveal">
+          <figure class="snap snap-a">
+            <img src="images/sustainability/jomer-local-plants.jpg" alt="JM carrying an armful of local plants for the garden" loading="lazy">
+            <figcaption>Fresh from the garden</figcaption>
+          </figure>
+          <figure class="snap snap-b">
+            <img src="images/team/jomer-in-kitchen.jpg" alt="JM cooking dinner in the open kitchen" loading="lazy">
+            <figcaption>Dinner's almost ready</figcaption>
+          </figure>
+        </div>
+        <div class="host-note reveal">
+          <p class="eyebrow">Meet your host</p>
+          <h2 class="section-title">Hi, I'm JM.<br><em>I'll look after you.</em></h2>
+          <!-- TODO: JM to approve this first-person wording -->
+          <p>From your first message to the day you leave, I'm here to help: planning your trip up the mountain, cooking with fresh produce from local farms, and showing you the Tboli crafts and places I love.</p>
+          <div class="host-sign">
+            <img src="images/team/jomer-dagang.jpg" alt="" loading="lazy">
+            <div>
+              <span class="host-sig">JM</span>
+              <span class="host-role">Jomer L. Dagang, your host</span>
+            </div>
+          </div>
+          <div class="host-actions">
+            <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-lagoon" target="_blank" rel="noopener">Message your host</a>
+            <a href="about.html#team" class="link-arrow">Meet the team <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -210,7 +235,6 @@
     <section class="section day" id="dining">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Dining &amp; Daily Rhythm</p>
           <h2 class="section-title">A day at the <em>sanctuary</em>.</h2>
           <p class="section-sub">Wholesome meals made with fresh, locally grown produce, served by the pool or at the table. Or cook your own in the open kitchen.</p>
         </div>
@@ -229,10 +253,10 @@
             <p>Fresh coffee and a warm Filipino breakfast, served poolside with a view.</p>
           </li>
           <li class="reveal">
-            <img src="images/food/smoothie-pineapple-cucumber-glass.jpg" alt="Pineapple, cucumber and coconut milk smoothie" loading="lazy">
-            <span class="tl-time">2:00 pm</span>
-            <h3>Swim &amp; smoothies</h3>
-            <p>Lazy hours in the pool with a fresh fruit and coconut milk smoothie.</p>
+            <img src="images/explore/seven-falls-1.jpg" alt="One of the Seven Falls of Lake Sebu" loading="lazy">
+            <span class="tl-time">10:30 am</span>
+            <h3>Out to the falls</h3>
+            <p>Seven Falls is just 8 minutes away. Zipline over it, or walk down to the water.</p>
           </li>
           <li class="reveal">
             <img src="images/food/grilled-tilapia.jpg" alt="Grilled tilapia on banana leaf with tomato, onion and lime" loading="lazy">
@@ -248,10 +272,10 @@
     <section class="section menu" id="menu">
       <div class="container menu-wrap">
         <div class="menu-intro reveal">
-          <p class="eyebrow">Food Menu</p>
           <h2 class="section-title">Fresh, local &amp; <em>made with care</em>.</h2>
           <p>Wholesome Filipino meals prepared with fresh, locally grown produce. Here's what's available during your stay. Just let us know about any allergies or dietary needs.</p>
           <p class="menu-hint">Tap any dish to see a photo.</p>
+          <a href="menu.html" class="btn btn-sun menu-full">See the full menu</a>
           <div class="menu-photo">
             <img src="images/food/sotanghon-guisado.jpg" alt="Sotanghon guisado: glass noodles with vegetables" loading="lazy">
           </div>
@@ -464,173 +488,284 @@
             </ul>
           </div>
 
-          <p class="menu-note">Smoothies ₱100 each. Meal prices on request, just ask JM when you book. Menu may change with seasonal, locally grown produce.</p>
+          <p class="menu-note">Smoothies ₱100 each. Meal prices on request, just ask us when you book. Menu may change with seasonal, locally grown produce.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ LIVING LIGHTLY (short; full version on about.html) ============ -->
+    <section class="section sustain-lite" id="sustainability">
+      <div class="container sl reveal">
+        <h2 class="sl-statement">
+          We run on <button class="pill" data-gallery="solar" aria-label="See photos: solar power"><img src="images/sustainability/solar-panels.jpg" alt="" loading="lazy"></button> <em>sunshine</em>,
+          drive the <button class="pill" data-gallery="ev" aria-label="See photos: our electric car"><img src="images/sustainability/ev-on-the-road.jpg" alt="" loading="lazy"></button> <em>first electric car</em> in Lake Sebu,
+          refill <button class="pill" data-gallery="water" aria-label="See photos: drinking water station"><img src="images/kitchen/kitchen-water.jpg" alt="" loading="lazy"></button> <em>water, not plastic</em>,
+          and plant <button class="pill" data-gallery="grown" aria-label="See photos: local plants and produce"><img src="images/sustainability/planting-by-pool.jpg" alt="" loading="lazy"></button> <em>what grows here</em>.
+        </h2>
+        <a href="about.html#sustainability" class="link-arrow">See how we live lightly <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ GETTING HERE ============ -->
+    <section class="section getting" id="getting-here">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Getting here</p>
+          <h2 class="section-title">Easier than you think. <em>We'll look after you.</em></h2>
+          <p class="section-sub">Fly into General Santos, then it's one scenic drive up into the mountains.</p>
+        </div>
+
+        <div class="road reveal">
+          <svg class="road-art" viewBox="0 0 1200 360" aria-hidden="true">
+            <defs>
+              <linearGradient id="hill-fade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1f5e3b"/><stop offset="1" stop-color="#143f28"/>
+              </linearGradient>
+            </defs>
+            <path class="road-hills-back" d="M0 360V300l180-70 140 50 200-110 160 70 180-130 140 60 200-110v300z"/>
+            <path class="road-hills" d="M0 360v-30l240-40 180 30 220-70 180 40 180-90 200 30v130z"/>
+            <path class="road-flight" d="M70 80Q230 0 380 250"/>
+            <path class="road-drive" d="M380 250C520 250 560 190 660 190S820 130 880 120 1040 90 1100 70"/>
+            <circle class="road-dot" cx="70" cy="80" r="10"/>
+            <circle class="road-dot road-dot-pick" cx="380" cy="250" r="13"/>
+            <circle class="road-dot" cx="880" cy="120" r="10"/>
+            <circle class="road-dot road-dot-home" cx="1100" cy="70" r="15"/>
+          </svg>
+          <span class="road-time" style="--x:22%; --y:9%" aria-hidden="true">~2 h flight</span>
+          <span class="road-time" style="--x:49%; --y:46%" aria-hidden="true">2.5 h drive</span>
+          <span class="road-time" style="--x:83.5%; --y:30%" aria-hidden="true">8 min</span>
+          <ol class="road-stops">
+            <li class="rs" style="--x:5.8%; --y:27%"><strong>Manila or Cebu</strong><small>Fly in from home</small><span class="rs-next">~2 h flight to General Santos</span></li>
+            <li class="rs rs-pick" style="--x:31.7%; --y:75%"><strong>General Santos</strong><small>We can pick you up</small><span class="rs-next">2.5 h drive up the mountain</span></li>
+            <li class="rs" style="--x:73.3%; --y:38%"><strong>Lake Sebu</strong><small>Town, market &amp; bus depot</small><span class="rs-next">8 min drive</span></li>
+            <li class="rs rs-home" style="--x:91.7%; --y:19.4%"><strong>Sebu Sanctuary</strong><small>You're here</small></li>
+          </ol>
+        </div>
+
+        <div class="road-foot reveal">
+          <a href="#book" class="btn btn-sun" data-add-pickup>Add airport pickup</a>
+          <button type="button" class="btn btn-ghost-light" data-open-gallery="location">View location map</button>
+          <details class="road-more">
+            <summary>Other ways to get here</summary>
+            <ul>
+              <li><strong>Bus:</strong> General Santos to Koronadal and Surallah, then a van up to Lake Sebu (3 to 4 h)</li>
+              <li><strong>Car or taxi</strong> from General Santos</li>
+              <li><strong>From Davao:</strong> about 3 h by bus to General Santos</li>
+              <li>Last trips up the mountain leave early, so leave General Santos by early afternoon</li>
+              <li>It's cooler up here, bring a light jacket</li>
+            </ul>
+          </details>
+        </div>
+        <p class="getting-note">Times are approximate.</p>
       </div>
     </section>
 
     <!-- ============ EXPLORE LAKE SEBU ============ -->
     <section class="section explore" id="explore">
       <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Explore Lake Sebu</p>
-          <h2 class="section-title">Lakes, waterfalls &amp; <em>Tboli culture</em>.</h2>
-          <p class="section-sub">Sebu Sanctuary sits at Lake Seloton, near Lake Sebu in South Cotabato. It's a highland region on the island of Mindanao, known for its lakes, the Seven Falls and the rich heritage of the Tboli people.</p>
+        <div class="section-head section-head-row reveal">
+          <div>
+            <p class="eyebrow">Explore</p>
+            <h2 class="section-title">More than a place to stay. <em>A place to discover.</em></h2>
+            <p class="section-sub">Lake Sebu sits high in the mountains of South Cotabato: a land of lakes, waterfalls, rice terraces and the Tboli people. Most of it is a short drive from the sanctuary.</p>
+          </div>
+          <a href="explore.html" class="btn btn-lagoon">Explore all destinations</a>
         </div>
-        <div class="explore-grid">
-          <button class="tile explore-tile reveal" data-gallery="maps">
-            <img src="images/location/map-to-seven-falls.jpg" alt="Map showing the route from Sebu Sanctuary to the Seven Falls" loading="lazy">
-            <span class="tile-label"><small>Getting around</small>Seven Falls &amp; markets</span>
-            <span class="tile-count">3 maps</span>
-          </button>
-          <button class="tile explore-tile reveal" data-gallery="walks">
-            <img src="images/views/walk-mountain-view.jpg" alt="Mountain view at dusk from the walk behind the sanctuary" loading="lazy">
-            <span class="tile-label"><small>Nature</small>Walks behind the sanctuary</span>
-            <span class="tile-count">3 photos</span>
-          </button>
-          <button class="tile explore-tile reveal" data-gallery="butterflies">
-            <img src="images/views/butterfly-3.jpg" alt="A small butterfly on a blade of grass" loading="lazy" style="object-position: 25% 50%">
-            <span class="tile-label"><small>Wildlife</small>Butterflies of the region</span>
-            <span class="tile-count">3 photos</span>
-          </button>
+
+        <div class="dest-grid">
+          <a class="dest-card reveal" href="explore.html#seven-falls">
+            <img src="images/explore/seven-falls-1.jpg" alt="Seven Falls, Lake Sebu" loading="lazy">
+            <span class="dest-chip">8 min drive</span>
+            <span class="dest-label"><strong>Seven Falls &amp; zipline</strong><small>Seven waterfalls, and a zipline that flies you over them.</small></span>
+          </a>
+          <a class="dest-card reveal" href="explore.html#lakes">
+            <img src="images/explore/canoe-lake-sebu-2.jpg" alt="A traditional canoe on Lake Sebu" loading="lazy">
+            <span class="dest-chip">8 min drive</span>
+            <span class="dest-label"><strong>The lakes</strong><small>Canoe rides, lake cruises and lotus-covered water.</small></span>
+          </a>
+          <a class="dest-card reveal" href="explore.html#tdaan-kini">
+            <img src="images/explore/tdaan-kini-1.jpg" alt="T'Daan Kini nature pool and falls" loading="lazy">
+            <span class="dest-chip">Nature pool</span>
+            <span class="dest-label"><strong>T'Daan Kini Falls</strong><small>A clear natural pool fed by forest waterfalls.</small></span>
+          </a>
+          <a class="dest-card reveal" href="explore.html#cacao">
+            <img src="images/explore/cacao-pods.jpg" alt="Freshly harvested cacao pods" loading="lazy">
+            <span class="dest-chip">Farm visit</span>
+            <span class="dest-label"><strong>Sebul Cacao Farm</strong><small>See cacao grown and prepared, then taste the hot chocolate.</small></span>
+          </a>
+          <a class="dest-card reveal" href="explore.html#rice-fields">
+            <img src="images/explore/rice-fields.jpg" alt="Green rice fields near Lake Sebu" loading="lazy">
+            <span class="dest-chip">From our door</span>
+            <span class="dest-label"><strong>Rice fields &amp; mountain walks</strong><small>Trails, terraces and valley views right behind the sanctuary.</small></span>
+          </a>
+          <a class="dest-card reveal" href="explore.html#market">
+            <img src="images/explore/local-market.jpg" alt="Fresh produce at the Lake Sebu public market" loading="lazy">
+            <span class="dest-chip">8 min drive</span>
+            <span class="dest-label"><strong>Lake Sebu market</strong><small>Fresh produce, lake fish and local snacks.</small></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ WHY BOOK DIRECT ============ -->
-    <section class="section direct">
+    <!-- ============ TBOLI CULTURE (INTRO) ============ -->
+    <section class="culture-band" id="culture">
+      <div class="container culture-grid">
+        <figure class="culture-photo reveal">
+          <img src="images/culture/tboli-dancers.jpg" alt="Tboli dancers in traditional dress at Sebu Sanctuary" loading="lazy">
+          <figcaption>Local Tboli dancers at Sebu Sanctuary</figcaption>
+        </figure>
+        <div class="culture-copy reveal">
+          <p class="eyebrow eyebrow-light">Tboli Culture</p>
+          <h2 class="section-title">The home of <em>the Tboli people.</em></h2>
+          <p>Lake Sebu is the ancestral home of the Tboli, known for T'nalak cloth woven from abaca fibre in patterns said to come from dreams, for their music and brasswork, and for a deep connection to this land.</p>
+          <p>We want to share it the right way, so we're developing our cultural experiences together with members of the local Tboli community.</p>
+          <a href="explore.html#tboli" class="btn btn-sun">Learn about Tboli culture</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOK YOUR STAY ============ -->
+    <section class="section book" id="book">
       <div class="container">
         <div class="section-head center reveal">
-          <p class="eyebrow">Why book direct</p>
-          <h2 class="section-title">Simple, personal &amp; <em>worry-free</em>.</h2>
-        </div>
-        <div class="direct-grid">
-          <article class="direct-card reveal">
-            <span class="dc-num">01</span>
-            <h3>Talk to a real person</h3>
-            <p>Message JM (Jomer), our co-designer and host. Ask anything about the rooms, the food or the area before you book.</p>
-          </article>
-          <article class="direct-card reveal">
-            <span class="dc-num">02</span>
-            <h3>No platform fees</h3>
-            <p>Book straight with us and skip the extra service charges added by booking sites.</p>
-          </article>
-          <article class="direct-card reveal">
-            <span class="dc-num">03</span>
-            <h3>Tailored to your group</h3>
-            <p>Birthdays, family reunions or a quiet couples' stay: we'll help arrange meals and details.</p>
-          </article>
-          <article class="direct-card reveal">
-            <span class="dc-num">04</span>
-            <h3>Welcoming overseas guests</h3>
-            <p>Travelling from abroad? We're happy to help with getting to Lake Sebu, arrival tips and local recommendations.</p>
-          </article>
-        </div>
-        <p class="direct-more reveal"><a href="about.html" class="link-arrow">Meet the people behind Sebu Sanctuary <span aria-hidden="true">→</span></a></p>
-      </div>
-    </section>
-
-    <!-- ============ CONTACT / BOOK ============ -->
-    <section class="contact" id="contact">
-      <div class="contact-bg" aria-hidden="true">
-        <img src="images/views/walk-mountain-view.jpg" alt="" loading="lazy">
-      </div>
-      <div class="container contact-grid">
-        <div class="contact-info reveal">
-          <p class="eyebrow eyebrow-light">Book your stay</p>
-          <h2 class="contact-title">Your mountain escape<br><em>starts with a message.</em></h2>
-          <p>Send us your dates and group size and we'll get back to you with availability and rates.</p>
-
-          <ul class="contact-list">
-            <li>
-              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
-              <div>
-                <small>Call or text JM (Jomer)</small>
-                <!-- TODO: replace with JM's real number -->
-                <a href="tel:+639000000000" class="ci-link">+63 9XX XXX XXXX</a>
-              </div>
-            </li>
-            <li>
-              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-              <div>
-                <small>Email us</small>
-                <a href="mailto:sebusantuary@me.com" class="ci-link">sebusantuary@me.com</a>
-              </div>
-            </li>
-            <li>
-              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-              <div>
-                <small>Find us</small>
-                <span class="ci-link">Lake Seloton, near Lake Sebu, South Cotabato</span>
-              </div>
-            </li>
-            <li>
-              <span class="ci-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-              <div>
-                <small>Response time</small>
-                <span class="ci-link">Usually within 24 hours</span>
-              </div>
-            </li>
-          </ul>
-
-          <div class="chat-buttons">
-            <!-- TODO: replace 639000000000 with JM's number (country code, no + or spaces) -->
-            <a class="chip" href="https://wa.me/639000000000" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="chip" href="viber://chat?number=%2B639000000000">Viber</a>
-          </div>
+          <h2 class="section-title">Plan your stay. <em>See your total.</em></h2>
+          <p class="section-sub">Choose your dates, guests and any extras. Your total updates as you go, then send your booking request. We will confirm within 24 hours.</p>
         </div>
 
-        <form class="enquiry reveal" id="enquiry" novalidate>
-          <h3>Booking enquiry</h3>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-name">Full name</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" autocomplete="email" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="field">
-              <label for="f-phone">Phone / WhatsApp <span class="opt">(optional)</span></label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel">
-            </div>
-            <div class="field">
-              <label for="f-country">Travelling from</label>
-              <select id="f-country" name="from">
-                <option>Within the Philippines</option>
-                <option>Overseas</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row form-row-3">
-            <div class="field">
-              <label for="f-in">Check-in</label>
-              <input id="f-in" name="checkin" type="date" required>
-            </div>
-            <div class="field">
-              <label for="f-out">Check-out</label>
-              <input id="f-out" name="checkout" type="date" required>
-            </div>
-            <div class="field">
-              <label for="f-guests">Guests</label>
-              <div class="stepper">
-                <button type="button" class="step-btn" data-step="-1" aria-controls="f-guests" aria-label="Fewer guests">−</button>
-                <input type="number" id="f-guests" name="guests" value="2" min="1" max="20" step="1" inputmode="numeric">
-                <button type="button" class="step-btn" data-step="1" aria-controls="f-guests" aria-label="More guests">+</button>
+        <div class="book-grid">
+          <form class="book-form" id="booking" novalidate>
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">1</span> Your dates</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-in">Check-in</label>
+                  <input id="bk-in" name="checkin" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="bk-out">Check-out</label>
+                  <input id="bk-out" name="checkout" type="date" required>
+                </div>
               </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">2</span> Guests</legend>
+              <div class="field">
+                <label for="bk-guests">Number of guests</label>
+                <div class="stepper">
+                  <button type="button" class="step-btn" data-step="-1" aria-controls="bk-guests" aria-label="Fewer guests">−</button>
+                  <input type="number" id="bk-guests" name="guests" value="2" min="1" max="20" step="1" inputmode="numeric">
+                  <button type="button" class="step-btn" data-step="1" aria-controls="bk-guests" aria-label="More guests">+</button>
+                </div>
+                <p class="field-hint" id="bk-guest-hint"></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">3</span> Add extras <span class="opt">(optional)</span></legend>
+              <div class="extras">
+                <div class="extra extra-pickup">
+                  <div class="extra-text">
+                    <strong>Airport pickup from General Santos</strong>
+                    <span>Private car from GES airport to the sanctuary, about 2 to 2.5 hours.</span>
+                  </div>
+                  <select id="bk-pickup" name="pickup" aria-label="Airport pickup">
+                    <option value="none">No pickup</option>
+                    <option value="oneway">One way</option>
+                    <option value="return">Return trip</option>
+                  </select>
+                </div>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="breakfast">
+                  <div class="extra-text"><strong>Daily breakfast</strong><span>A warm Filipino breakfast every morning.</span></div>
+                  <span class="extra-price" data-price-for="breakfast"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="falls">
+                  <div class="extra-text"><strong>Seven Falls &amp; zipline trip</strong><span>Transport and a guided visit to the falls.</span></div>
+                  <span class="extra-price" data-price-for="falls"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="tboli">
+                  <div class="extra-text"><strong>Tboli cultural visit</strong><span>Meet local weavers and musicians with a local guide.</span></div>
+                  <span class="extra-price" data-price-for="tboli"></span>
+                </label>
+                <label class="extra">
+                  <input type="checkbox" name="extra" value="photo">
+                  <div class="extra-text"><strong>Photo walk with Kingsley</strong><span>Learn to capture Lake Sebu with a professional photographer of 25+ years.</span></div>
+                  <span class="extra-price" data-price-for="photo"></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="bk-step">
+              <legend><span class="bk-num">4</span> Your details</legend>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-name">Full name</label>
+                  <input id="bk-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                  <label for="bk-email">Email</label>
+                  <input id="bk-email" name="email" type="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="bk-phone">Phone / WhatsApp <span class="opt">(optional)</span></label>
+                  <input id="bk-phone" name="phone" type="tel" autocomplete="tel">
+                </div>
+                <div class="field">
+                  <label for="bk-from">Travelling from</label>
+                  <select id="bk-from" name="from">
+                    <option>Within the Philippines</option>
+                    <option>Australia</option>
+                    <option>Another country</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="bk-msg">Anything we should know? <span class="opt">(optional)</span></label>
+                <textarea id="bk-msg" name="message" rows="3" placeholder="Flight times, celebrations, dietary needs…"></textarea>
+              </div>
+            </fieldset>
+          </form>
+
+          <aside class="book-summary" aria-live="polite">
+            <div class="sum-card">
+              <p class="sum-eyebrow">Your stay</p>
+              <p class="sum-dates" id="sum-dates">Choose your dates</p>
+              <ul class="sum-lines" id="sum-lines"></ul>
+              <div class="sum-total">
+                <span>Total</span>
+                <strong id="sum-total">₱0</strong>
+              </div>
+              <p class="sum-sample" id="sum-sample" hidden>Sample rates shown for preview. Final rates to be confirmed.</p>
+              <button type="submit" form="booking" class="btn btn-sun btn-lg btn-block">Request to book</button>
+              <button type="button" class="btn btn-wa btn-block" id="book-wa">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.2 1.1-1.7 1.2-.5 0-1 .3-3.3-.7a10.6 10.6 0 0 1-4.1-3.7c-.3-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1 .9 1.9 1.2 2.2 1.3.3.2.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.1.1.6-.1 1.1z"/></svg>
+                Send on WhatsApp
+              </button>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <p class="sum-note">Pay nothing now. Your host checks availability and confirms your booking personally.</p>
+              <ul class="sum-perks">
+                <li>No booking fees</li>
+                <li>A personal host</li>
+                <li>Flexible extras</li>
+              </ul>
             </div>
-          </div>
-          <div class="field">
-            <label for="f-msg">Anything we should know? <span class="opt">(optional)</span></label>
-            <textarea id="f-msg" name="message" rows="3" placeholder="Celebrations, dietary needs, arrival time…"></textarea>
-          </div>
-          <button type="submit" class="btn btn-sun btn-lg btn-block">Send enquiry</button>
-          <p class="form-note">This opens your email app with your details filled in, ready to send to Sebu Sanctuary.</p>
-          <p class="form-error" id="form-error" role="alert" hidden></p>
-        </form>
+
+            <div class="sum-contact">
+              <p><strong>Questions first?</strong> Message us. We usually reply within 24 hours.</p>
+              <div class="chat-buttons">
+                <a class="chip chip-dark" href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="chip chip-dark" href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+                <a class="chip chip-dark" href="mailto:sebusantuary@me.com" data-contact="email">Email</a>
+              </div>
+              <p class="sum-where">Lake Seloton, near Lake Sebu, South Cotabato</p>
+            </div>
+          </aside>
+        </div>
       </div>
     </section>
   </main>
@@ -640,23 +775,22 @@
     <div class="container footer-grid">
       <div>
         <a href="#home" class="brand brand-footer">
-        <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
+          <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
           <span class="brand-text">Sebu <em>Sanctuary</em></span>
         </a>
         <p class="footer-tag">A private retreat at Lake Seloton, near Lake Sebu, South Cotabato, Philippines.<br><em>Live well. Be well. All of life.</em></p>
       </div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="#stay">The Stay</a>
-        <a href="#pool">Infinity Pool</a>
-        <a href="#dining">Dining</a>
-        <a href="#menu">Menu</a>
-        <a href="#explore">Explore Lake Sebu</a>
-        <a href="about.html">About Us</a>
-        <a href="#contact">Book</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
       </nav>
       <div class="footer-contact">
-        <a href="tel:+639000000000">+63 9XX XXX XXXX (JM)</a>
-        <a href="mailto:sebusantuary@me.com">sebusantuary@me.com</a>
+        <a href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+        <a href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+        <a href="https://www.facebook.com/profile.php?id=61592510867921" data-contact="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:sebusantuary@me.com" data-contact="email">sebusantuary@me.com</a>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -665,10 +799,10 @@
     </div>
   </footer>
 
-  <!-- Mobile sticky booking bar -->
+  <!-- Mobile booking bar: hides while scrolling down, returns on scroll up -->
   <div class="mobile-cta" id="mobile-cta">
-    <a href="tel:+639000000000" class="btn btn-outline-lagoon">Call JM</a>
-    <a href="#contact" class="btn btn-sun">Book your stay</a>
+    <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-outline-lagoon" target="_blank" rel="noopener">Message us</a>
+    <a href="#book" class="btn btn-sun">Book your stay</a>
   </div>
 
   <!-- Lightbox -->

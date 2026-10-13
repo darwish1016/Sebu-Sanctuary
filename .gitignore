@@ -1,0 +1,24 @@
+# Full-size originals from Kingsley's Drive (the site uses optimised copies)
+images/_originals/
+videos/_originals/
+
+# Video clips not used on the site
+videos/hero-evening.*
+videos/pool-rain.*
+videos/pool-rain-wide.*
+videos/rooms-walk.*
+
+# Video tour: not linked from the site until the new video is ready
+reel/
+reel.html
+reel_project/
+
+# Local tools and system files
+.claude/
+node_modules/
+_preview*.html
+_options.html
+_probe.html
+Thumbs.db
+desktop.ini
+.DS_Store

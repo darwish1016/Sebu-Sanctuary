@@ -25,13 +25,11 @@
       </a>
 
       <nav class="main-nav" id="main-nav" aria-label="Main">
-        <a href="index.html#stay">The Stay</a>
-        <a href="index.html#pool">Infinity Pool</a>
-        <a href="index.html#dining">Dining</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="about.html" class="active" aria-current="page">About Us</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="index.html#contact" class="btn btn-sun nav-cta">Book your stay</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active" aria-current="page">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
+        <a href="book.html" class="btn btn-sun nav-cta">Book your stay</a>
       </nav>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
@@ -49,9 +47,12 @@
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-content">
-        <p class="eyebrow eyebrow-light">About Us</p>
         <h1 class="page-title">The people behind<br><em>your sanctuary.</em></h1>
         <p class="hero-lead">Owners, hosts and a local team who look after every stay personally, guided by one simple purpose.</p>
+        <div class="hero-actions">
+          <a href="book.html" class="btn btn-sun btn-lg">Book your stay</a>
+          <a href="#team" class="btn btn-ghost-light btn-lg">Meet the team</a>
+        </div>
       </div>
     </section>
 
@@ -106,11 +107,85 @@
       </div>
     </section>
 
-    <!-- ============ OWNERS ============ -->
-    <section class="section owners">
+    <!-- ============ BUILT BY LOCAL HANDS (history of the build) ============ -->
+    <section class="section build" id="build">
+      <div class="container build-grid">
+        <div class="build-photos reveal">
+          <img class="bp-main" src="images/explore/house-from-distance.jpg" alt="Sebu Sanctuary seen from a distance, surrounded by green hills" loading="lazy">
+          <img src="images/sustainability/bamboo-furniture-2.jpg" alt="The local makers of our bamboo furniture" loading="lazy">
+          <img src="images/sustainability/solar-panels.jpg" alt="Solar panels on the roof" loading="lazy">
+        </div>
+        <div class="build-copy reveal">
+          <h2 class="section-title">Built here, <em>by people from here.</em></h2>
+          <p>Sebu Sanctuary was built with local builders and local talent, using skills and materials from around Lake Sebu. Our bamboo furniture is handmade by makers nearby, and the garden is planted with native species.</p>
+          <p>We also built for the future: solar panels and a battery bank on the roof, and charging for the first electric car in Lake Sebu.</p>
+          <!-- TODO: Kingsley to add photos and stories from the build -->
+          <p class="build-soon">The story of the build, in photos, is coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LIVING LIGHTLY (SUSTAINABILITY) ============ -->
+    <section class="section sustain" id="sustainability">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">The Owners</p>
+          <h2 class="section-title">We don't just say sustainable. <em>Here's what we do.</em></h2>
+          <p class="section-sub">Small, practical choices that look after Lake Sebu and the people who live here.</p>
+        </div>
+
+        <div class="sus-grid">
+          <article class="sus-card sus-card-lg reveal">
+            <button class="sus-media" data-gallery="solar" aria-label="See photos of our solar power">
+              <img src="images/sustainability/solar-panels.jpg" alt="Solar panels on the roof of Sebu Sanctuary with the mountains behind" loading="lazy">
+              <span class="tile-count">2 photos</span>
+            </button>
+            <div class="sus-body">
+              <span class="sus-tag">Energy</span>
+              <h3>Solar power, stored for the night</h3>
+              <p>Solar panels on our roof and a battery bank help power the sanctuary with clean energy from the Mindanao sun, day and night.</p>
+            </div>
+          </article>
+          <article class="sus-card reveal">
+            <button class="sus-media" data-gallery="ev" aria-label="See photos of our electric car">
+              <img src="images/sustainability/ev-on-the-road.jpg" alt="Our electric car parked on the road at sunset" loading="lazy">
+              <span class="tile-count">4 photos</span>
+            </button>
+            <div class="sus-body">
+              <span class="sus-tag">Transport</span>
+              <h3>The first electric car in Lake Sebu</h3>
+              <p>We built charging into the house, backed by our solar system, so we can get around without the fumes.</p>
+            </div>
+          </article>
+          <article class="sus-card reveal">
+            <button class="sus-media" data-gallery="water" aria-label="See our drinking water station">
+              <img src="images/kitchen/kitchen-water.jpg" alt="Hot and cold drinking water station in the kitchen" loading="lazy">
+              <span class="tile-count">1 photo</span>
+            </button>
+            <div class="sus-body">
+              <span class="sus-tag">Water</span>
+              <h3>Refill, don't rebuy</h3>
+              <p>Hot and cold drinking water on tap in the kitchen, so you can refill your bottle instead of buying plastic.</p>
+            </div>
+          </article>
+          <article class="sus-card reveal">
+            <button class="sus-media" data-gallery="grown" aria-label="See photos of our local plants and produce">
+              <img src="images/sustainability/planting-by-pool.jpg" alt="Planting local plants in the garden beside the pool" loading="lazy">
+              <span class="tile-count">4 photos</span>
+            </button>
+            <div class="sus-body">
+              <span class="sus-tag">Food &amp; garden</span>
+              <h3>Grown and bought locally</h3>
+              <p>We plant native species around the sanctuary and cook with produce from local farms and the Lake Sebu market.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OWNERS ============ -->
+    <section class="section owners" id="team">
+      <div class="container">
+        <div class="section-head reveal">
           <h2 class="section-title">Meet the <em>owners</em>.</h2>
           <p class="section-sub">The heart behind Sebu Sanctuary.</p>
         </div>
@@ -161,9 +236,8 @@
               <p>Jomer co-designed Sebu Sanctuary and looks after every booking personally. A graduate of Mindanao State University (Bachelor of Arts in Filipino), he has a deep knowledge of the region's flora and fauna, prepares wholesome meals with fresh, locally grown produce, and champions the indigenous arts and crafts of the region.</p>
               <p class="person-motto">“Preserving our heritage, nurturing our land, inspiring our future.”</p>
               <div class="person-actions">
-                <!-- TODO: replace with JM's real number -->
-                <a href="tel:+639000000000" class="btn btn-lagoon btn-sm">Call JM</a>
-                <a href="mailto:sebusantuary@me.com" class="btn btn-outline-lagoon btn-sm">Email</a>
+                <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-lagoon btn-sm" target="_blank" rel="noopener">Message your host</a>
+                <a href="mailto:sebusantuary@me.com" data-contact="email" class="btn btn-outline-lagoon btn-sm">Email</a>
               </div>
             </div>
           </article>
@@ -175,7 +249,6 @@
     <section class="section staff">
       <div class="container">
         <div class="section-head reveal">
-          <p class="eyebrow">Our Staff</p>
           <h2 class="section-title">The team that makes it <em>feel like home</em>.</h2>
           <p class="section-sub">Staff profiles coming soon.</p>
         </div>
@@ -208,7 +281,7 @@
             </div>
             <span class="person-role">Pool &amp; Grounds</span>
             <h3 class="person-name">Staff Name</h3>
-            <p>Looks after the infinity pool, gardens and outdoor spaces every day.</p>
+            <p>Looks after the pool, gardens and outdoor spaces every day.</p>
           </article>
 
           <article class="person person-mini reveal">
@@ -261,12 +334,11 @@
         <img src="images/views/walk-sunset.jpg" alt="" loading="lazy">
       </div>
       <div class="container cta-inner reveal">
-        <p class="eyebrow eyebrow-light">Come stay with us</p>
         <h2 class="contact-title">Come for a stay.<br><em>Leave transformed.</em></h2>
         <p>Send us your dates and we'll take care of the rest.</p>
         <div class="hero-actions">
-          <a href="index.html#contact" class="btn btn-sun btn-lg">Book your stay</a>
-          <a href="tel:+639000000000" class="btn btn-ghost-light btn-lg">Call JM</a>
+          <a href="book.html" class="btn btn-sun btn-lg">Book your stay</a>
+          <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener">Message us</a>
         </div>
       </div>
     </section>
@@ -283,17 +355,16 @@
         <p class="footer-tag">A private retreat at Lake Seloton, near Lake Sebu, South Cotabato, Philippines.<br><em>Live well. Be well. All of life.</em></p>
       </div>
       <nav class="footer-links" aria-label="Footer">
-        <a href="index.html#stay">The Stay</a>
-        <a href="index.html#pool">Infinity Pool</a>
-        <a href="index.html#dining">Dining</a>
-        <a href="index.html#menu">Menu</a>
-        <a href="index.html#explore">Explore Lake Sebu</a>
-        <a href="about.html">About Us</a>
-        <a href="index.html#contact">Book</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
       </nav>
       <div class="footer-contact">
-        <a href="tel:+639000000000">+63 9XX XXX XXXX (JM)</a>
-        <a href="mailto:sebusantuary@me.com">sebusantuary@me.com</a>
+        <a href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+        <a href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+        <a href="https://www.facebook.com/profile.php?id=61592510867921" data-contact="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:sebusantuary@me.com" data-contact="email">sebusantuary@me.com</a>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -304,8 +375,18 @@
 
   <!-- Mobile sticky booking bar -->
   <div class="mobile-cta" id="mobile-cta">
-    <a href="tel:+639000000000" class="btn btn-outline-lagoon">Call JM</a>
-    <a href="index.html#contact" class="btn btn-sun">Book your stay</a>
+    <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-outline-lagoon" target="_blank" rel="noopener">Message us</a>
+    <a href="book.html" class="btn btn-sun">Book your stay</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+    <button class="lb-close" id="lb-close" aria-label="Close gallery">×</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">›</button>
   </div>
 
   <script src="script.js"></script>

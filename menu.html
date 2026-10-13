@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Food Menu | Sebu Sanctuary, Lake Sebu</title>
+  <meta name="description" content="The Sebu Sanctuary kitchen menu: Filipino breakfasts, home-style favourites, grilled dishes and fresh coconut smoothies, cooked with produce from local farms at Lake Sebu.">
+  <meta name="theme-color" content="#1F5E3B">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/brand/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Sebu Sanctuary home">
+        <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
+        <span class="brand-text">Sebu <em>Sanctuary</em></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html" class="active" aria-current="page">Food</a>
+        <a href="explore.html">Explore</a>
+        <a href="book.html" class="btn btn-sun nav-cta">Book your stay</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ MENU COVER ============ -->
+    <section class="menu-hero">
+      <div class="mh-plates" aria-hidden="true">
+        <span class="mh-plate p1"><img src="images/food/pancit-guisado.jpg" alt=""></span>
+        <span class="mh-plate p2"><img src="images/food/lumpia.jpg" alt=""></span>
+        <span class="mh-plate p3"><img src="images/food/chicken-tocino.jpg" alt=""></span>
+        <span class="mh-plate p4"><img src="images/food/chicken-curry.jpg" alt=""></span>
+        <span class="mh-plate p5"><img src="images/food/grilled-tilapia.jpg" alt=""></span>
+        <span class="mh-plate p6"><img src="images/food/sweet-potato-fries.jpg" alt=""></span>
+      </div>
+      <div class="container mh-copy">
+        <p class="eyebrow eyebrow-light">The Sanctuary kitchen</p>
+        <h1 class="page-title">Fresh, local &amp;<br><em>made with care.</em></h1>
+        <p class="hero-lead">Home-style Filipino cooking with produce from local farms and the Lake Sebu market, served by the pool or at the table.</p>
+        <div class="hero-actions">
+          <a href="#menu-sheet" class="btn btn-sun">See the menu</a>
+          <button type="button" class="btn btn-ghost-light" data-print>Print the menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ THE MENU ============ -->
+    <section class="menu-page" id="menu-sheet">
+      <nav class="mp-nav" aria-label="Menu sections">
+        <div class="container mp-nav-inner">
+          <a href="#breakfast">Breakfast</a>
+          <a href="#filipino">Filipino Favourites</a>
+          <a href="#grill">Grill &amp; Snacks</a>
+          <a href="#smoothies">Smoothies</a>
+        </div>
+      </nav>
+
+      <div class="container">
+      <article class="mp-sheet reveal">
+        <header class="mp-head">
+          <img src="images/brand/logo-badge.png" alt="" width="76" height="76">
+          <p class="mp-kicker">Sebu Sanctuary</p>
+          <h2 class="mp-title">Kitchen Menu</h2>
+          <p class="mp-sub">Wholesome Filipino food, cooked fresh for you</p>
+          <span class="mp-rule"><svg viewBox="0 0 120 24" aria-hidden="true"><path d="M0 12h44M76 12h44" stroke="currentColor" stroke-width="1"/><path d="M60 3c6 4 8 8 0 18-8-10-6-14 0-18z" fill="currentColor"/><path d="M60 12c5-3 10-3 14 0-4 3-9 3-14 0zM60 12c-5-3-10-3-14 0 4 3 9 3 14 0z" fill="currentColor" opacity=".55"/></svg></span>
+        </header>
+
+        <section class="mp-section" id="breakfast" aria-labelledby="h-breakfast">
+          <div class="mp-section-head">
+            <h3 id="h-breakfast">Breakfast</h3>
+            <p>Filipino classics for a slow morning</p>
+          </div>
+          <ul class="mp-list">
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/chicken-tocino.jpg" data-caption="Chicken Tocino" aria-label="See a photo of Chicken Tocino">
+                <img src="images/food/chicken-tocino.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Chicken Tocino</h4>
+                <p>Sweet-cured chicken with garlic rice, a much-loved Filipino breakfast</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/pork-tocino.jpg" data-caption="Pork Tocino" aria-label="See a photo of Pork Tocino">
+                <img src="images/food/pork-tocino.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pork Tocino</h4>
+                <p>Sweet-cured pork with garlic rice, fried egg &amp; fresh tomato</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/bangus-daing.jpg" data-caption="Bangus Daing" aria-label="See a photo of Bangus Daing">
+                <img src="images/food/bangus-daing.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Bangus Daing</h4>
+                <p>Vinegar-marinated milkfish fried until golden, with fresh tomato &amp; spiced vinegar dip</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mp-section" id="filipino" aria-labelledby="h-filipino">
+          <div class="mp-section-head">
+            <h3 id="h-filipino">Filipino Favourites</h3>
+            <p>Home-style dishes, made for sharing</p>
+          </div>
+          <ul class="mp-list">
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/pork-adobo.jpg" data-caption="Pork Adobo" aria-label="See a photo of Pork Adobo">
+                <img src="images/food/pork-adobo.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pork Adobo <span class="mp-tag">Classic</span></h4>
+                <p>Pork slow-braised in soy, vinegar, garlic &amp; peppercorns</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/pork-sinigang.jpg" data-caption="Pork Sinigang" aria-label="See a photo of Pork Sinigang">
+                <img src="images/food/pork-sinigang.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pork Sinigang</h4>
+                <p>Sour tamarind soup with pork and garden vegetables</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/bangus-sinigang.jpg" data-caption="Bangus Sinigang" aria-label="See a photo of Bangus Sinigang">
+                <img src="images/food/bangus-sinigang.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Bangus Sinigang</h4>
+                <p>Sour tamarind soup with milkfish and fresh vegetables</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/chicken-curry.jpg" data-caption="Chicken Curry" aria-label="See a photo of Chicken Curry">
+                <img src="images/food/chicken-curry.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Chicken Curry</h4>
+                <p>Filipino-style chicken curry with coconut milk, potato &amp; capsicum</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/pancit-guisado.jpg" data-caption="Pancit Guisado" aria-label="See a photo of Pancit Guisado">
+                <img src="images/food/pancit-guisado.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pancit Guisado</h4>
+                <p>Sautéed noodles with vegetables &amp; meat, served with calamansi. Great for sharing</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/sotanghon-guisado.jpg" data-caption="Sotanghon Guisado" aria-label="See a photo of Sotanghon Guisado">
+                <img src="images/food/sotanghon-guisado.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Sotanghon Guisado</h4>
+                <p>Glass noodles sautéed with vegetables, mushrooms &amp; meat</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mp-section" id="grill" aria-labelledby="h-grill">
+          <div class="mp-section-head">
+            <h3 id="h-grill">Grill &amp; Snacks</h3>
+            <p>From the grill and the fryer, perfect by the pool</p>
+          </div>
+          <ul class="mp-list">
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/grilled-tilapia.jpg" data-caption="Grilled Tilapia" aria-label="See a photo of Grilled Tilapia">
+                <img src="images/food/grilled-tilapia.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Grilled Tilapia</h4>
+                <p>Whole tilapia grilled on banana leaf with tomato, onion, chilli &amp; lime</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/bbq-chicken-skewers.jpg" data-caption="BBQ Chicken Skewers" aria-label="See a photo of BBQ Chicken Skewers">
+                <img src="images/food/bbq-chicken-skewers.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>BBQ Chicken Skewers</h4>
+                <p>Sweet-savoury marinated chicken, grilled until lightly charred</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/lumpia.jpg" data-caption="Lumpia" aria-label="See a photo of Lumpia">
+                <img src="images/food/lumpia.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Lumpia</h4>
+                <p>Crispy spring rolls with sweet chilli dipping sauce</p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/sweet-potato-fries.jpg" data-caption="Sweet Potato Fries" aria-label="See a photo of Sweet Potato Fries">
+                <img src="images/food/sweet-potato-fries.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Sweet Potato Fries <span class="mp-tag">Vegetarian</span></h4>
+                <p>Crispy local sweet potato fries with dipping sauces</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="mp-section" id="smoothies" aria-labelledby="h-smoothies">
+          <div class="mp-section-head">
+            <h3 id="h-smoothies">Smoothies</h3>
+            <p>Blended fresh with coconut milk</p>
+          </div>
+          <ul class="mp-list">
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/smoothie-papaya-banana-glass.jpg" data-caption="Papaya, Banana & Coconut Milk" aria-label="See a photo of Papaya, Banana & Coconut Milk">
+                <img src="images/food/smoothie-papaya-banana-glass.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Papaya, Banana &amp; Coconut Milk <span class="mp-tag">Healthy choice</span></h4>
+                <p>Rich in vitamins A &amp; C, gentle on digestion and full of antioxidants <span class="mp-price">100</span></p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/smoothie-pineapple-cucumber-glass.jpg" data-caption="Pineapple, Cucumber & Coconut Milk" aria-label="See a photo of Pineapple, Cucumber & Coconut Milk">
+                <img src="images/food/smoothie-pineapple-cucumber-glass.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pineapple, Cucumber &amp; Coconut Milk <span class="mp-tag">Healthy choice</span></h4>
+                <p>A refreshing, cleansing duo, high in vitamin C and antioxidants <span class="mp-price">100</span></p>
+              </div>
+            </li>
+            <li class="mp-dish">
+              <button class="mp-plate" type="button" data-photo="images/food/smoothie-pineapple-watermelon-glass.jpg" data-caption="Pineapple, Watermelon & Coconut Milk" aria-label="See a photo of Pineapple, Watermelon & Coconut Milk">
+                <img src="images/food/smoothie-pineapple-watermelon-glass.jpg" alt="" loading="lazy">
+              </button>
+              <div class="mp-text">
+                <h4>Pineapple, Watermelon &amp; Coconut Milk <span class="mp-tag">Healthy choice</span></h4>
+                <p>Hydrating, refreshing and perfect after a swim <span class="mp-price">100</span></p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <footer class="mp-foot">
+          <span class="mp-rule"><svg viewBox="0 0 120 24" aria-hidden="true"><path d="M0 12h44M76 12h44" stroke="currentColor" stroke-width="1"/><path d="M60 3c6 4 8 8 0 18-8-10-6-14 0-18z" fill="currentColor"/><path d="M60 12c5-3 10-3 14 0-4 3-9 3-14 0zM60 12c-5-3-10-3-14 0 4 3 9 3 14 0z" fill="currentColor" opacity=".55"/></svg></span>
+          <!-- TODO: add meal prices when the client confirms them (add <span class="mp-price">…</span> after each description) -->
+          <p class="mp-prices">Prices in Philippine pesos. Smoothies 100 each; meal prices are confirmed when you book.</p>
+          <ul class="mp-notes">
+            <li>Tell us about allergies or dietary needs</li>
+            <li>The menu changes with the seasons</li>
+            <li>Served by the pool or at the table</li>
+          </ul>
+          <p class="mp-hint">Tap any dish to see a photo.</p>
+        </footer>
+      </article>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="contact-bg" aria-hidden="true">
+        <img src="images/kitchen/breakfast-near-pool.jpg" alt="" loading="lazy">
+      </div>
+      <div class="container cta-inner reveal">
+        <h2 class="contact-title">Good food,<br><em>slow mornings.</em></h2>
+        <p>Send us your dates and tell us what you'd love to eat.</p>
+        <div class="hero-actions">
+          <a href="book.html" class="btn btn-sun btn-lg">Book your stay</a>
+          <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-ghost-light btn-lg" target="_blank" rel="noopener">Message us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-footer">
+        <img class="brand-logo" src="images/brand/logo-badge.png" alt="" width="44" height="44">
+          <span class="brand-text">Sebu <em>Sanctuary</em></span>
+        </a>
+        <p class="footer-tag">A private retreat at Lake Seloton, near Lake Sebu, South Cotabato, Philippines.<br><em>Live well. Be well. All of life.</em></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="menu.html">Food</a>
+        <a href="explore.html">Explore</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="https://wa.me/639000000000" data-contact="whatsapp" target="_blank" rel="noopener">WhatsApp us</a>
+        <a href="https://m.me/61592510867921" data-contact="messenger" target="_blank" rel="noopener">Messenger</a>
+        <a href="https://www.facebook.com/profile.php?id=61592510867921" data-contact="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:sebusantuary@me.com" data-contact="email">sebusantuary@me.com</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Sebu Sanctuary. All rights reserved.</span>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky booking bar -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a href="https://wa.me/639000000000" data-contact="whatsapp" class="btn btn-outline-lagoon" target="_blank" rel="noopener">Message us</a>
+    <a href="book.html" class="btn btn-sun">Book your stay</a>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery" hidden>
+    <button class="lb-close" id="lb-close" aria-label="Close gallery">×</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+    <figure class="lb-figure">
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Next photo">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
