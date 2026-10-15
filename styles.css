@@ -1502,6 +1502,26 @@ video[data-autoplay].playing { opacity: 1; }
 .tb-story-photo { position: relative; }
 .tile:hover video, .dest-photos button:hover video { transform: scale(1.04); transition: opacity .8s var(--ease), transform 1.1s var(--ease); }
 
+/* ---------- Phone fixes ---------- */
+/* date fields: iPhone Safari gives them a fixed minimum width, which pushed them out of their boxes */
+input[type="date"] { min-width: 0; max-width: 100%; width: 100%; box-sizing: border-box; }
+@supports (-webkit-touch-callout: none) {
+  input[type="date"] { -webkit-appearance: none; appearance: none; display: block; min-height: 2.6em; }
+  input[type="date"]::-webkit-date-and-time-value { text-align: left; margin: 0; }
+}
+@media (max-width: 560px) {
+  /* two buttons side by side become a stack */
+  .hero-actions, .host-actions { flex-direction: column; align-items: stretch; width: 100%; }
+  .hero-actions .btn, .host-actions .btn { width: 100%; justify-content: center; text-align: center; }
+  .host-actions .link-arrow { align-self: flex-start; }
+}
+@media (max-width: 860px) {
+  /* food menu section bar: show every section instead of hiding some off-screen */
+  .mp-nav-inner { flex-wrap: wrap; justify-content: center; overflow: visible; gap: 6px; }
+  .mp-nav a { padding: 7px 14px; font-size: .85rem; }
+  .mp-section { scroll-margin-top: calc(var(--header-h) + 120px); }
+}
+
 /* ---------- Scroll reveal ---------- */
 .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }

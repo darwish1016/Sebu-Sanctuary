@@ -22,3 +22,7 @@ _probe.html
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Promo video projects (separate from the website)
+promo/
+showreel/

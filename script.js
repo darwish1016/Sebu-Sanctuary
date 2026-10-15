@@ -523,7 +523,6 @@
         mpLinks.forEach(function (a) {
           var on = a.getAttribute("href") === "#" + en.target.id;
           a.classList.toggle("active", on);
-          if (on && a.scrollIntoView && window.innerWidth < 860) a.parentNode.scrollLeft = a.offsetLeft - 16;   // keep the active pill visible on phones
         });
       });
     }, { rootMargin: "-40% 0px -55% 0px" });
