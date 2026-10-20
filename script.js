@@ -71,7 +71,8 @@
     kitchen: [
       { src: "images/kitchen/kitchen-lookout-bench.jpg", caption: "The kitchen bench, looking out to the garden" },
       { src: "images/kitchen/kitchen-view.jpg", caption: "The open kitchen" },
-      { src: "images/kitchen/kitchen-water.jpg", caption: "Hot and cold drinking water on tap" }
+      { src: "images/kitchen/kitchen-water.jpg", caption: "Hot and cold drinking water on tap" },
+      { src: "images/kitchen/kitchen-late-afternoon.jpg", caption: "The kitchen in the late afternoon light" }
     ],
     gym: [
       { src: "images/gym/gym-1.jpg", caption: "The home gym" },
@@ -108,6 +109,7 @@
     ],
     falls: [
       { src: "images/explore/seven-falls-1.jpg", caption: "Seven Falls, Lake Sebu" },
+      { src: "images/explore/seven-falls-path.jpg", caption: "The path to the falls" },
       { src: "images/explore/seven-falls-2.jpg", caption: "Seven Falls through the forest" },
       { src: "images/explore/seven-falls-3.jpg", caption: "One of the higher falls" },
       { src: "images/explore/seven-falls-4.jpg", caption: "The falls and the valley" },
@@ -119,7 +121,13 @@
       { src: "images/explore/canoe-lake-sebu-1.jpg", caption: "Paddling across Lake Sebu" },
       { src: "images/explore/water-lilies-1.jpg", caption: "Water lilies on the lake" },
       { src: "images/explore/water-lilies-2.jpg", caption: "Lotus flowers on the lake" },
-      { src: "images/explore/lake-cruise.jpg", caption: "A welcome on board a lake cruise" }
+      { src: "images/explore/lake-cruise.jpg", caption: "A welcome on board a lake cruise" },
+      { src: "images/explore/canoe-among-lilies.jpg", caption: "A dugout canoe among the lotus" },
+      { src: "images/explore/photographing-water-lilies.jpg", caption: "Photographing the water lilies" },
+      { src: "images/explore/home-on-the-lake.jpg", caption: "A home on the water" },
+      { src: "images/explore/houses-on-the-lake-edge.jpg", caption: "Houses on the edge of Lake Sebu" },
+      { src: "images/explore/homes-along-the-lake.jpg", caption: "Homes along the lake" },
+      { src: "images/explore/lake-seloton-panorama.jpg", caption: "Lake Seloton in the morning mist" }
     ],
     tdaan: [
       { src: "images/explore/tdaan-kini-1.jpg", caption: "T'Daan Kini nature pool and falls" },
@@ -129,22 +137,35 @@
     ],
     cacao: [
       { src: "images/explore/cacao-pods.jpg", caption: "Freshly harvested cacao pods" },
+      { src: "images/explore/cacao-on-the-tree.jpg", caption: "Cacao pods ripening on the tree" },
       { src: "images/explore/cacao-preparing.jpg", caption: "Preparing cacao seeds" },
       { src: "images/explore/cacao-hot-chocolate.jpg", caption: "Hot chocolate made from the farm's cacao" },
       { src: "images/explore/cacao-farm-papaya.jpg", caption: "Papaya growing on the farm" },
       { src: "images/explore/cacao-farm-flowers-1.jpg", caption: "Flowers on the cacao farm" },
-      { src: "images/explore/cacao-farm-flowers-2.jpg", caption: "Flowers on the cacao farm" }
+      { src: "images/explore/cacao-farm-flowers-2.jpg", caption: "Flowers on the cacao farm" },
+      { src: "images/explore/sebul-cacao-cafe.jpg", caption: "The café at Sebul Cacao Farm" }
     ],
     rice: [
       { src: "images/explore/rice-fields.jpg", caption: "Rice fields near Lake Sebu" },
       { src: "images/explore/rice-planting.jpg", caption: "Planting rice by hand" },
+      { src: "images/explore/preparing-rice-fields.jpg", caption: "Preparing the rice fields with a carabao" },
+      { src: "images/explore/horse-in-the-fields.jpg", caption: "A horse led through the banana fields" },
+      { src: "images/explore/people-horse-rider.jpg", caption: "Riding home along the road" },
+      { src: "images/explore/people-drying-rice.jpg", caption: "Drying the rice harvest" },
+      { src: "images/explore/people-winnowing.jpg", caption: "Winnowing rice in the wind" },
       { src: "images/explore/mountain-view.jpg", caption: "The mountain view from Sebu Sanctuary" },
       { src: "images/explore/walk-4.jpg", caption: "On the walk behind the sanctuary" },
       { src: "images/explore/walk-5.jpg", caption: "On the walk behind the sanctuary" }
     ],
     market: [
       { src: "images/explore/local-market.jpg", caption: "Fresh produce at the local market" },
+      { src: "images/explore/fish-market.jpg", caption: "Lake fish at the Lake Sebu market" },
+      { src: "images/explore/vegetable-market.jpg", caption: "Eggplant, garlic and onions at the market" },
       { src: "images/explore/marang-fruit.jpg", caption: "Marang, a local fruit" },
+      { src: "images/explore/street-food-grill.jpg", caption: "Street food on the grill" },
+      { src: "images/explore/lake-sebu-scarves.jpg", caption: "Woven Lake Sebu scarves" },
+      { src: "images/explore/people-family-motorbike.jpg", caption: "A family ride into town" },
+      { src: "images/explore/tvs-second-life.jpg", caption: "Old TVs given a second life as planters" },
       { src: "images/explore/house-from-distance.jpg", caption: "Sebu Sanctuary, 2.5 km from town" }
     ],
     nature: [
@@ -155,10 +176,50 @@
       { src: "images/nature/purple-flowers.jpg", caption: "Morning glory" },
       { src: "images/nature/coffee-flowers.jpg", caption: "Coffee flowers" },
       { src: "images/nature/dragonfly-green.jpg", caption: "Green dragonfly" },
+      { src: "images/nature/butterfly-bushbrown.jpg", caption: "Bushbrown butterfly, photographed on our land" },
+      { src: "images/nature/butterfly-lesser-grass-blue.jpg", caption: "Lesser Grass Blue butterfly, photographed on our land" },
+      { src: "images/nature/giant-shield-bug.jpg", caption: "Giant shield bug, near Seven Falls" },
+      { src: "images/nature/butterfly-grass-blue.jpg", caption: "Grass Blue butterfly" },
+      { src: "images/nature/butterfly-grey-glassy-tiger.jpg", caption: "Grey Glassy Tiger butterfly" },
+      { src: "images/nature/mushroom-conecup.jpg", caption: "Conecup mushrooms, photographed on our land" },
+      { src: "images/nature/zinnia.jpg", caption: "Double-flowered zinnia" },
+      { src: "images/nature/melastoma.jpg", caption: "Melastoma leaves, photographed on our land" },
       { src: "images/nature/morning-dew.jpg", caption: "Morning dew on a leaf" },
       { src: "images/nature/dragonfly-brown.jpg", caption: "Brown dragonfly" },
       { src: "images/nature/tattoo-plant.jpg", caption: "Fern frond" },
       { src: "images/nature/butterfly-4.jpg", caption: "Butterfly of the region" }
+    ],
+    build: [
+      { src: "images/build/01-prior-to-build.jpg", caption: "Apr 2024, Where it began: a bare hillside above Lake Seloton" },
+      { src: "images/build/02-camping-on-the-land.jpg", caption: "Jun 2024, Camping on the land" },
+      { src: "images/build/03-site-considerations.jpg", caption: "Jun 2024, Working out where the house should sit" },
+      { src: "images/build/04-site-planning.jpg", caption: "Jun 2024, Site planning with JM and Dindo" },
+      { src: "images/build/05-groundbreaking.jpg", caption: "Aug 2025, The team on site with the design for the house" },
+      { src: "images/build/06-roadways.jpg", caption: "Aug 2025, Building the road in" },
+      { src: "images/build/07-foundations-dug.jpg", caption: "Sep 2025, Foundations, dug by hand" },
+      { src: "images/build/08-foundations-done.jpg", caption: "Sep 2025, Foundations done" },
+      { src: "images/build/09-walls-from-the-hill.jpg", caption: "Sep 2025, The first walls, seen from the hill" },
+      { src: "images/build/10-johnnerell-and-dindo.jpg", caption: "Sep 2025, Johnnerell and Dindo on site" },
+      { src: "images/build/11-kitchen-walls.jpg", caption: "Sep 2025, The kitchen walls go up" },
+      { src: "images/build/12-site-view.jpg", caption: "Sep 2025, Watching the build from the field" },
+      { src: "images/build/13-engineer-and-build-manager.jpg", caption: "Sep 2025, Johnnerell and Dindo, who led the engineering and the build" },
+      { src: "images/build/14-house-and-valley.jpg", caption: "Sep 2025, The house and the valley" },
+      { src: "images/build/15-house-and-lake.jpg", caption: "Sep 2025, The house, the lake and the mountains" },
+      { src: "images/build/16-house-taking-shape.jpg", caption: "Oct 2025, The house taking shape" },
+      { src: "images/build/17-roof-goes-on.jpg", caption: "Oct 2025, The roof goes on" },
+      { src: "images/build/18-kitchen-floor.jpg", caption: "Nov 2025, Laying the kitchen floor" },
+      { src: "images/build/19-drone.jpg", caption: "Nov 2025, From the air: the house on the hill" },
+      { src: "images/build/20-house-on-the-hill.jpg", caption: "Nov 2025, The house on the hill" },
+      { src: "images/build/21-pool.jpg", caption: "Nov 2025, The pool takes shape" },
+      { src: "images/build/22-house-and-mountains.jpg", caption: "Nov 2025, The house and the mountains" },
+      { src: "images/build/23-adam-and-jomer-in-the-pool.jpg", caption: "Nov 2025, Adam and JM try out the pool, before the water" },
+      { src: "images/build/24-side-of-house.jpg", caption: "Nov 2025, The side of the house, with JM" },
+      { src: "images/build/25-rear-of-house.jpg", caption: "Feb 2026, Finishing the rear of the house" },
+      { src: "images/build/26-solar-installers.jpg", caption: "Mar 2026, The solar installers fit our battery system" },
+      { src: "images/build/27-road-repairs.jpg", caption: "Apr 2026, Repairing the road" },
+      { src: "images/build/28-ceiling-timbers.jpg", caption: "Apr 2026, Preparing the bamboo for the ceilings" },
+      { src: "images/build/29-third-bedroom-balcony.jpg", caption: "Jun 2026, The Bedroom Three balcony goes in" },
+      { src: "images/build/30-third-bedroom-ceiling.jpg", caption: "Jun 2026, Installing the Bedroom Three ceiling" }
     ],
     tboli: [
       { src: "images/culture/tboli-dancers.jpg", caption: "Local Tboli dancers at Sebu Sanctuary" },
@@ -586,7 +647,7 @@
       $("#lb-close").focus();
     };
     var closeGallery = function () {
-      lb.hidden = true; document.body.style.overflow = "";
+      lb.hidden = true; document.body.style.overflow = $(".ch-modal:not([hidden])") ? "hidden" : "";
       if (lastFocus) lastFocus.focus();
     };
     var step = function (dir) { index = (index + dir + current.length) % current.length; render(); };
@@ -595,6 +656,29 @@
     // single photos, e.g. dishes on the menu page
     $$("[data-photo]").forEach(function (t) {
       t.addEventListener("click", function () { openList([{ src: t.dataset.photo, caption: t.dataset.caption || "" }]); });
+    });
+    // every other photo opens on its own (or with the photos in its group), shown whole
+    var skip = "a, button, [data-gallery], [data-photo], .hero, .page-hero, .menu-hero, .contact-bg, .cta-band";
+    var item = function (el) {
+      var fig = el.closest("figure"), cap = fig && fig.querySelector("figcaption");
+      return { src: el.dataset.full || el.currentSrc || el.src, caption: el.alt || (cap ? cap.textContent.trim() : "") };
+    };
+    $$("main img").forEach(function (img) {
+      if (img.closest(skip)) return;
+      var box = img.parentElement;
+      var target = box.querySelector("video[data-autoplay]") ? box : img;   // a looping video sits on top of this photo
+      var group = img.closest("[data-lb-group]");
+      var open = function () {
+        if (!group) return openList([item(img)]);
+        var imgs = $$("img", group).filter(function (i) { return !i.closest(skip); });
+        openList(imgs.map(item), imgs.indexOf(img));
+      };
+      target.classList.add("zoomable");
+      target.setAttribute("tabindex", "0");
+      target.setAttribute("role", "button");
+      target.setAttribute("aria-label", "View photo" + (img.alt ? ": " + img.alt : ""));
+      target.addEventListener("click", open);
+      target.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
     });
     $$("[data-open-gallery]").forEach(function (l) {
       l.addEventListener("click", function (e) { e.preventDefault(); openGallery(l.dataset.openGallery); });
@@ -624,6 +708,59 @@
       touchX = null;
     });
   }
+
+  /* ---------- Our Story: the build photos open a window with the story and more photos ---------- */
+  var chModal = $("#ch-modal");
+  if (chModal) {
+    var chSheets = $$(".ch-sheet", chModal), chDots = $$(".ch-dots i", chModal), chNow = 0, chFrom = null;
+    var chShow = function (i) {
+      chNow = (i + chSheets.length) % chSheets.length;
+      chSheets.forEach(function (el, k) {
+        el.hidden = k !== chNow;
+        $$("video", el).forEach(function (v) {
+          if (k === chNow && !reduceMotion) { v.preload = "auto"; var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+          else v.pause();
+        });
+      });
+      chDots.forEach(function (d, k) { d.classList.toggle("on", k === chNow); });
+      chModal.setAttribute("aria-labelledby", "ch-title-" + chNow);
+      $(".ch-box", chModal).scrollTop = 0;
+    };
+    var chOpen = function (i, from) {
+      chFrom = from; chModal.hidden = false; document.body.style.overflow = "hidden";
+      chShow(i); $(".ch-close", chModal).focus();
+    };
+    var chClose = function () {
+      chModal.hidden = true; document.body.style.overflow = "";
+      $$("video", chModal).forEach(function (v) { v.pause(); });
+      if (chFrom) chFrom.focus();
+    };
+    $$("[data-chapter]").forEach(function (b) {
+      if (b.classList.contains("ch-sheet")) return;
+      b.addEventListener("click", function () { chOpen(parseInt(b.dataset.chapter, 10), b); });
+    });
+    $(".ch-close", chModal).addEventListener("click", chClose);
+    $$(".ch-step", chModal).forEach(function (b) {
+      b.addEventListener("click", function () { chShow(chNow + parseInt(b.dataset.step, 10)); });
+    });
+    chModal.addEventListener("click", function (e) { if (e.target === chModal) chClose(); });
+    document.addEventListener("keydown", function (e) {
+      if (chModal.hidden || (lb && !lb.hidden)) return;   // the photo pop-up handles its own keys
+      if (e.key === "Escape") chClose();
+      if (e.key === "ArrowRight") chShow(chNow + 1);
+      if (e.key === "ArrowLeft") chShow(chNow - 1);
+    });
+  }
+
+  /* ---------- Films with sound: play when tapped ---------- */
+  $$("[data-film]").forEach(function (box) {
+    var v = $("video", box), b = $(".film-play", box);
+    b.addEventListener("click", function () {
+      v.controls = true; box.classList.add("is-playing");
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+    v.addEventListener("ended", function () { box.classList.remove("is-playing"); v.controls = false; v.load(); });
+  });
 
   /* ---------- Video loops ---------- */
   var loops = $$("video[data-autoplay]");
