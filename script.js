@@ -762,6 +762,19 @@
     v.addEventListener("ended", function () { box.classList.remove("is-playing"); v.controls = false; v.load(); });
   });
 
+  /* ---------- Sound on/off for a looping video ---------- */
+  $$("[data-sound]").forEach(function (b) {
+    var v = $("video", b.parentElement);
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();   // don't open the photo pop-up underneath
+      v.muted = !v.muted;
+      if (!v.muted) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      b.setAttribute("aria-pressed", String(!v.muted));
+      b.setAttribute("aria-label", v.muted ? "Turn the sound on" : "Turn the sound off");
+      b.textContent = v.muted ? "Sound on" : "Sound off";
+    });
+  });
+
   /* ---------- Video loops ---------- */
   var loops = $$("video[data-autoplay]");
   var saveData = navigator.connection && navigator.connection.saveData;
