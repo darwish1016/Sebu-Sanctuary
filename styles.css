@@ -1699,6 +1699,11 @@ button.ch-ph:hover img { transform: scale(1.05); }
 /* ---------- Our Story: Before / After page breaks with hill-shaped edges ---------- */
 .hill-break { position: relative; height: clamp(360px, 42vw, 580px); overflow: hidden; color: #fff; text-align: center; background: var(--lagoon-deep); }
 .hill-break > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* laptops and desktops: the photo stays fixed while the page scrolls over it (phones and tablets keep the still photo) */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .hill-break { background: var(--hb-img) var(--hb-pos, 50% 50%) / cover no-repeat fixed; }
+  .hill-break > img { visibility: hidden; }
+}
 .hill-break::after { content: ""; position: absolute; inset: 0; background: rgba(8,26,18,.25); pointer-events: none; }
 .hb-edge { position: absolute; left: 0; z-index: 2; display: block; width: 100%; height: clamp(28px, 5vw, 70px); pointer-events: none; }
 .hb-t { top: -1px; color: var(--hb-top); }
