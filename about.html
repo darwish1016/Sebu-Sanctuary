@@ -284,7 +284,7 @@
     </section>
 
     <!-- ============ AFTER: the same hillside today (page break) ============ -->
-    <section class="hill-break" style="--hb-top: var(--lagoon-deep); --hb-bot: var(--sand); --hb-img: url('images/views/drone-sunset.jpg'); --hb-pos: 50% 55%" aria-label="After · Today">
+    <section class="hill-break" style="--hb-top: var(--lagoon-deep); --hb-bot: var(--lagoon-deep); --hb-img: url('images/views/drone-sunset.jpg'); --hb-pos: 50% 55%" aria-label="After · Today">
       <img src="images/views/drone-sunset.jpg" alt="Sebu Sanctuary today, on the same hillside at sunset" loading="lazy" style="object-position: 50% 55%">
       <svg class="hb-edge hb-t" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 V22 C1240 70 1060 10 860 40 C660 70 460 8 260 34 C150 48 70 40 0 26 Z" fill="currentColor"/></svg>
       <div class="hb-in reveal"><span class="hb-tag">After · Today</span><p>The same hillside, two years later.</p></div>
@@ -294,56 +294,24 @@
     <!-- ============ LIVING LIGHTLY (SUSTAINABILITY) ============ -->
     <section class="section sustain" id="sustainability">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="sx-head reveal">
           <h2 class="section-title">We don't just say sustainable. <em>Here's what we do.</em></h2>
-          <p class="section-sub">Small, practical choices that look after Lake Sebu and the people who live here.</p>
+          <p>Small, practical choices that look after Lake Sebu and the people who live here.</p>
         </div>
 
-        <div class="sus-grid">
-          <article class="sus-card sus-card-lg reveal">
-            <button class="sus-media" data-gallery="solar" aria-label="See photos of our solar power">
-              <img src="images/sustainability/solar-panels.jpg" alt="Solar panels on the roof of Sebu Sanctuary with the mountains behind" loading="lazy">
-              <span class="tile-count">2 photos</span>
-            </button>
-            <div class="sus-body">
-              <span class="sus-tag">Energy</span>
-              <h3>Solar power, stored for the night</h3>
-              <p>Solar panels on our roof and a battery bank help power the sanctuary with clean energy from the Mindanao sun, day and night.</p>
-            </div>
-          </article>
-          <article class="sus-card reveal">
-            <button class="sus-media" data-gallery="ev" aria-label="See photos of our electric car">
-              <img src="images/sustainability/ev-on-the-road.jpg" alt="Our electric car parked on the road at sunset" loading="lazy">
-              <span class="tile-count">4 photos</span>
-            </button>
-            <div class="sus-body">
-              <span class="sus-tag">Transport</span>
-              <h3>The first electric car in Lake Sebu</h3>
-              <p>We built charging into the house, backed by our solar system, so we can get around without the fumes.</p>
-            </div>
-          </article>
-          <article class="sus-card reveal">
-            <button class="sus-media" data-gallery="water" aria-label="See our drinking water station">
-              <img src="images/kitchen/kitchen-water.jpg" alt="Hot and cold drinking water station in the kitchen" loading="lazy">
-              <span class="tile-count">1 photo</span>
-            </button>
-            <div class="sus-body">
-              <span class="sus-tag">Water</span>
-              <h3>Refill, don't rebuy</h3>
-              <p>Hot and cold drinking water on tap in the kitchen, so you can refill your bottle instead of buying plastic.</p>
-            </div>
-          </article>
-          <article class="sus-card reveal">
-            <button class="sus-media" data-gallery="grown" aria-label="See photos of our local plants and produce">
-              <img src="images/sustainability/planting-by-pool.jpg" alt="Planting local plants in the garden beside the pool" loading="lazy">
-              <span class="tile-count">4 photos</span>
-            </button>
-            <div class="sus-body">
-              <span class="sus-tag">Food &amp; garden</span>
-              <h3>Grown and bought locally</h3>
-              <p>We plant native species around the sanctuary and cook with produce from local farms and the Lake Sebu market.</p>
-            </div>
-          </article>
+        <!-- TODO: confirm these figures with Kingsley before launch -->
+        <ul class="sx-facts reveal">
+          <li><span class="sx-num">24<small>h</small></span><h3>Solar power</h3><p>Panels on the roof and a battery bank keep the lights on, day and night.</p></li>
+          <li><span class="sx-num">1<small>st</small></span><h3>Electric car in Lake Sebu</h3><p>Charged at home, from our own sun.</p></li>
+          <li><span class="sx-num">0</span><h3>Plastic bottles needed</h3><p>Hot and cold drinking water on tap. Just refill.</p></li>
+          <li><span class="sx-num">100<small>%</small></span><h3>Local hands</h3><p>Built, furnished and planted by people from around Lake Sebu.</p></li>
+        </ul>
+
+        <div class="sx-strip reveal">
+          <button type="button" data-gallery="solar" aria-label="See photos of our solar power"><img src="images/sustainability/solar-panels.jpg" alt="Solar panels on the roof of Sebu Sanctuary" loading="lazy"><span class="sx-cap">Solar</span></button>
+          <button type="button" data-gallery="ev" aria-label="See photos of our electric car"><img src="images/sustainability/ev-on-the-road.jpg" alt="Our electric car on the road above Lake Sebu" loading="lazy"><span class="sx-cap">Electric car</span></button>
+          <button type="button" data-gallery="water" aria-label="See our drinking water station"><img src="images/kitchen/kitchen-water.jpg" alt="Hot and cold drinking water in the kitchen" loading="lazy"><span class="sx-cap">Water on tap</span></button>
+          <button type="button" data-gallery="grown" aria-label="See photos of our local plants and produce"><img src="images/sustainability/planting-by-pool.jpg" alt="Planting local plants beside the pool" loading="lazy"><span class="sx-cap">Native garden</span></button>
         </div>
       </div>
     </section>
