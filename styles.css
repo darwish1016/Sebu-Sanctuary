@@ -1518,9 +1518,8 @@ button.link-arrow { background: none; border-left: 0; border-right: 0; border-to
 
 
 /* ---------- Our Story: the team of five ---------- */
-.team-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-@media (max-width: 1080px) { .team-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 860px) { .team-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
+.team-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 24px; }
+@media (max-width: 860px) { .team-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; } }
 
 /* ---------- Explore: life around the lake ---------- */
 .pw-life { margin-top: clamp(56px, 7vw, 90px); }
