@@ -752,16 +752,6 @@
     });
   }
 
-  /* ---------- Films with sound: play when tapped ---------- */
-  $$("[data-film]").forEach(function (box) {
-    var v = $("video", box), b = $(".film-play", box);
-    b.addEventListener("click", function () {
-      v.controls = true; box.classList.add("is-playing");
-      var p = v.play(); if (p && p.catch) p.catch(function () {});
-    });
-    v.addEventListener("ended", function () { box.classList.remove("is-playing"); v.controls = false; v.load(); });
-  });
-
   /* ---------- Sound on/off for a looping video ---------- */
   $$("[data-sound]").forEach(function (b) {
     var v = $("video", b.parentElement);
@@ -771,7 +761,7 @@
       if (!v.muted) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
       b.setAttribute("aria-pressed", String(!v.muted));
       b.setAttribute("aria-label", v.muted ? "Turn the sound on" : "Turn the sound off");
-      b.textContent = v.muted ? "Sound on" : "Sound off";
+      $(".st-label", b).textContent = v.muted ? "Sound on" : "Sound off";
     });
   });
 

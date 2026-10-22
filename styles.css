@@ -1564,25 +1564,10 @@ button.link-arrow { background: none; border-left: 0; border-right: 0; border-to
 .tb-film { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(28px, 4vw, 56px); align-items: center; padding-top: clamp(48px, 6vw, 72px); }
 .tb-film-media { position: relative; aspect-ratio: 16 / 9; border-radius: 22px; overflow: hidden; background: #0b1510; box-shadow: var(--shadow); }
 .tb-film-media video { display: block; width: 100%; height: 100%; object-fit: cover; }
-.film-play {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 16px;
-  border: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,.45)); color: #fff; font: inherit; cursor: pointer;
-}
-.film-play-icon { position: relative; flex: none; width: 74px; height: 74px; border-radius: 50%; background: var(--sun); box-shadow: 0 10px 30px rgba(0,0,0,.35); transition: transform .3s var(--ease); }
-.film-play-icon::after { content: ""; position: absolute; left: 29px; top: 24px; border-left: 21px solid var(--lagoon-deep); border-top: 13px solid transparent; border-bottom: 13px solid transparent; }
-.film-play:hover .film-play-icon { transform: scale(1.08); }
-.film-play:focus-visible .film-play-icon { outline: 3px solid #fff; outline-offset: 4px; }
-.film-play-label { text-align: left; font-weight: 700; line-height: 1.25; text-shadow: 0 2px 10px rgba(0,0,0,.45); }
-.film-play-label small { display: block; font-weight: 500; opacity: .85; }
-.is-playing .film-play { display: none; }
 .tb-film-copy h3 { margin: 0 0 12px; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.6rem, 2.8vw, 2.2rem); line-height: 1.1; }
 .tb-film-copy h3 em { color: var(--lagoon); }
 .tb-film-copy p { margin: 0 0 18px; color: var(--ink-soft); font-size: 1.05rem; }
 @media (max-width: 860px) { .tb-film { grid-template-columns: 1fr; } }
-@media (max-width: 480px) {
-  .film-play-icon { width: 60px; height: 60px; }
-  .film-play-icon::after { left: 23px; top: 18px; border-left-width: 18px; border-top-width: 12px; border-bottom-width: 12px; }
-}
 
 /* ---------- Food: from the market ---------- */
 .food-market { background: var(--shell); }
@@ -1729,6 +1714,10 @@ button.ch-ph:hover img { transform: scale(1.05); }
   font: inherit; font-size: .8rem; font-weight: 700; cursor: pointer; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
   transition: background .25s, color .25s;
 }
-.sound-toggle::before { content: "¶A"; font-size: 1rem; line-height: 1; }
 .sound-toggle:hover, .sound-toggle[aria-pressed="true"] { background: var(--sun); color: var(--lagoon-deep); }
 .sound-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.sound-toggle svg { width: 21px; height: 21px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.sound-toggle .st-on, .sound-toggle[aria-pressed="true"] .st-off { display: none; }
+.sound-toggle[aria-pressed="true"] .st-on { display: block; }
+.tb-film-media .sound-toggle { right: 16px; bottom: 16px; padding: 10px 16px 10px 14px; font-size: .88rem; }
+.tb-film-media video { opacity: 1; }
