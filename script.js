@@ -141,7 +141,7 @@
       { src: "images/explore/cacao-preparing.jpg", caption: "Preparing cacao seeds" },
       { src: "images/explore/cacao-hot-chocolate.jpg", caption: "Hot chocolate made from the farm's cacao" },
       { src: "images/explore/cacao-farm-papaya.jpg", caption: "Papaya growing on the farm" },
-      { src: "images/explore/cacao-farm-flowers-1.jpg", caption: "Flowers on the cacao farm" },
+      { video: "videos/cacao-farm-drone.mp4", src: "videos/cacao-farm-drone.jpg", caption: "Hello from Sebul Farm: the farm and the valley from the air" },
       { src: "images/explore/cacao-farm-flowers-2.jpg", caption: "Flowers on the cacao farm" },
       { src: "images/explore/sebul-cacao-cafe.jpg", caption: "The café at Sebul Cacao Farm" }
     ],
@@ -629,10 +629,21 @@
   var lb = $("#lightbox");
   if (lb) {
     var lbImg = $("#lb-img"), lbCap = $("#lb-caption");
+    // gallery items with a "video" play in the same pop-up (silent, looping)
+    var lbVid = document.createElement("video");
+    lbVid.id = "lb-video"; lbVid.muted = true; lbVid.loop = true; lbVid.playsInline = true; lbVid.hidden = true;
+    lbImg.parentNode.insertBefore(lbVid, lbImg);
     var current = [], index = 0, lastFocus = null;
     var render = function () {
       var item = current[index];
-      lbImg.src = item.src; lbImg.alt = item.caption;
+      lbVid.hidden = !item.video; lbImg.hidden = !!item.video;
+      if (item.video) {
+        lbVid.poster = item.src; lbVid.src = item.video; lbVid.setAttribute("aria-label", item.caption);
+        var p = lbVid.play(); if (p && p.catch) p.catch(function () {});
+      } else {
+        lbVid.pause(); lbVid.removeAttribute("src"); lbVid.load();
+        lbImg.src = item.src; lbImg.alt = item.caption;
+      }
       var many = current.length > 1;
       lbCap.textContent = many ? item.caption + "  ·  " + (index + 1) + " / " + current.length : item.caption;
       $("#lb-prev").hidden = $("#lb-next").hidden = !many;
@@ -647,7 +658,7 @@
       $("#lb-close").focus();
     };
     var closeGallery = function () {
-      lb.hidden = true; document.body.style.overflow = $(".ch-modal:not([hidden])") ? "hidden" : "";
+      lb.hidden = true; lbVid.pause(); document.body.style.overflow = $(".ch-modal:not([hidden])") ? "hidden" : "";
       if (lastFocus) lastFocus.focus();
     };
     var step = function (dir) { index = (index + dir + current.length) % current.length; render(); };
