@@ -1699,10 +1699,10 @@ button.ch-ph:hover img { transform: scale(1.05); }
 .tb-film-media video { opacity: 1; }
 
 /* ---------- Our Story: sustainability in numbers ---------- */
-.sx-head { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 70px); align-items: end; margin-bottom: clamp(34px, 4vw, 50px); }
+.sx-head { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: clamp(34px, 4vw, 50px); }
 .sx-head .section-title { margin: 0; color: #fff; }
 .sx-head .section-title em { color: var(--sun); }
-.sx-head p { margin: 0; color: rgba(255,255,255,.78); font-size: 1.05rem; }
+.sx-head p { margin: 0; max-width: 60ch; color: rgba(255,255,255,.78); font-size: 1.05rem; }
 .sx-facts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.18); }
 .sx-facts li { padding: 30px 26px 0 0; margin-right: 26px; border-right: 1px solid rgba(255,255,255,.12); }
 .sx-facts li:last-child { border-right: 0; margin-right: 0; }
@@ -1717,7 +1717,6 @@ button.ch-ph:hover img { transform: scale(1.05); }
 .sx-strip button:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
 .sx-cap { position: absolute; left: 10px; bottom: 10px; padding: 5px 11px; border-radius: 99px; background: rgba(8,26,18,.72); color: #fff; font-size: .74rem; font-weight: 700; }
 @media (max-width: 860px) {
-  .sx-head { grid-template-columns: 1fr; }
   .sx-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
   .sx-facts li { margin-right: 0; padding: 26px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
   .sx-facts li:nth-last-child(-n+2) { border-bottom: 0; }
