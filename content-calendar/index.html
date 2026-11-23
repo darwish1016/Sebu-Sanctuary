@@ -154,45 +154,6 @@ img { max-width:100%; }
   </div>
 </section>
 
-<section class="wrap">
-  <div class="sec-head">
-    <span class="eyebrow">Graphic styles</span>
-    <h2>Five looks, from the designs you picked</h2>
-    <p>The numbers are the designs you chose on the design board. Every look uses Sebu's own forest green, cream and marigold with Fraunces and Manrope, and Kingsley's real photos, so the feed stays on brand while each post type looks different.</p>
-  </div>
-  <div class="styles">
-    <article class="style">
-      <div class="mock mA"><span>Your highland getaway is taking shape</span></div>
-      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style A</span><h3>Golden hour premium</h3>
-      <p>One full photo at sunrise or sunset, a serif headline with an italic word, small logo, lots of breathing room. For coming soon teasers and Sebu Sanctuary posts.</p>
-      <span class="refs">Your refs: 1, 4, 9, 10, 46, 47, 49</span></div>
-    </article>
-    <article class="style">
-      <div class="mock mB"><span>SEVEN<br>FALLS</span></div>
-      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style B</span><h3>Bold destination</h3>
-      <p>Huge condensed title in the sky, with a person or waterfall overlapping the letters, a script accent word and a marigold info strip. For Lake Sebu attractions.</p>
-      <span class="refs">Your refs: 6, 16, 17, 52, 53, 55, 57</span></div>
-    </article>
-    <article class="style">
-      <div class="mock mC"><div class="pc"><i></i></div><div class="st"></div></div>
-      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style C</span><h3>Postcard scrapbook</h3>
-      <p>Polaroids, stamps, tape and a handwritten line on textured cream paper. For culture, food and "postcards from" posts.</p>
-      <span class="refs">Your refs: 5, 22, 23, 26</span></div>
-    </article>
-    <article class="style">
-      <div class="mock mD"><i style="background:#8dbb7d"></i><i style="background:#f5a623"></i><i style="background:#2f7d5a"></i><i style="background:#ebe4d1"></i><i style="background:#ebe4d1"></i><i style="background:#1f5e3b"></i><i style="background:#c9773a"></i><i style="background:#8dbb7d"></i></div>
-      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style D</span><h3>Moodboard grid</h3>
-      <p>A tight grid of small real moments: coffee, mist, dragonflies, wood, food. One short line of text. For weekend mood posts.</p>
-      <span class="refs">Your refs: 38, 41</span></div>
-    </article>
-    <article class="style">
-      <div class="mock mE"><div class="sl"><span class="tab">GUIDE</span><span class="ln"></span><span class="ln s"></span></div><div class="sl"><span class="tab">STEP 01</span><span class="ln"></span><span class="ln s"></span></div><div class="sl"><span class="tab">STEP 02</span><span class="ln"></span><span class="ln s"></span></div></div>
-      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style E</span><h3>Info series carousel</h3>
-      <p>Five separate slides, each a complete card: a marigold cover with a big question, then numbered "Step 01" or "Tip 01" tabs, a short heading, two or three lines of text and one photo cut-out. The last slide asks people to save and follow.</p>
-      <span class="refs">Based on your carousel example</span></div>
-    </article>
-  </div>
-</section>
 
 <section class="wrap">
   <div class="sec-head">
@@ -208,7 +169,7 @@ img { max-width:100%; }
   <div class="sec-head">
     <span class="eyebrow">Post by post</span>
     <h2>What to make, and what to say</h2>
-    <p>Each card gives the format, style, photos to pull from the Drive folders, the slide plan for carousels and a caption to start from.</p>
+    <p>Each card gives the format, the photos to pull from the Drive folders, the slide plan for carousels and a caption to start from.</p>
   </div>
   <div class="filters" role="group" aria-label="Filter posts by format">
     <button type="button" id="f-all" data-f="all" aria-pressed="true">All 23</button>
@@ -397,7 +358,6 @@ const card = p => `<article class="post" id="post-${p.d}" data-f="${p.f}">
   <div class="meta"><span class="date">${dayName(p.d)} · Dec ${p.d}</span><span class="chip ${fmtClass(p.f)}">${p.f}</span><span class="pill">${esc(p.pillar)}</span>${p.designs ? '<span class="chip f-done">Designed</span>' : ""}</div>
   <h4>${esc(p.title)}</h4>
   ${p.designs ? `<div class="designs">${p.designs.map(([f, l]) => `<a href="designs/${f}" target="_blank" rel="noopener"><img src="designs/${f}" alt="${esc(l)}" loading="lazy" width="1080" height="1350"><span>${esc(l)}</span></a>`).join("")}</div>` : ""}
-  <span class="styletag">Style ${p.style} · ${STYLE_NAMES[p.style]}${p.refs && p.refs !== "-" ? ` · refs ${esc(p.refs)}` : ""}</span>
   ${p.make ? `<p>${esc(p.make)}</p>` : ""}
   ${p.slides ? `<div><span class="lbl">Slides</span><ol class="slides">${p.slides.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol></div>` : ""}
   <p><span class="lbl">Photos</span>${esc(p.photos)}</p>
