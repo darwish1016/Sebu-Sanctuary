@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Sebu Sanctuary · December 2026 content calendar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: green masthead band, then style guide, month grid, and week-by-week post cards on sand */
+:root {
+  --bg: #f5f1e6; --panel: #fffdf7; --ink: #1b3022; --soft: #546458; --line: rgba(27,48,34,.13);
+  --green: #1f5e3b; --green-deep: #143f28; --sea: #8dbb7d; --sea-pale: #e2ecd9;
+  --sun: #f5a623; --sun-ink: #9a5c00; --sun-pale: #fdf0d6; --on-green: #fffdf7; --on-green-soft: #cfe0c6; --static-ink: #1f5e3b;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #101a13; --panel: #17241b; --ink: #ecefe6; --soft: #a9b7aa; --line: rgba(236,239,230,.12);
+  --green: #1f5e3b; --green-deep: #0c2416; --sea: #8dbb7d; --sea-pale: #1e3324;
+  --sun: #f5a623; --sun-ink: #ffd27a; --sun-pale: #3a2c12; --on-green: #fffdf7; --on-green-soft: #b9d0b0; --static-ink: #a9d39a; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #101a13; --panel: #17241b; --ink: #ecefe6; --soft: #a9b7aa; --line: rgba(236,239,230,.12);
+  --green: #1f5e3b; --green-deep: #0c2416; --sea: #8dbb7d; --sea-pale: #1e3324;
+  --sun: #f5a623; --sun-ink: #ffd27a; --sun-pale: #3a2c12; --on-green: #fffdf7; --on-green-soft: #b9d0b0; --static-ink: #a9d39a; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.6 var(--body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; line-height: 1.15; }
+.eyebrow { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.hero { background: var(--green-deep); color: var(--on-green); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 2.6rem); padding-bottom: 2.4rem; }
+.hero .eyebrow { color: var(--sun); }
+.hero h1 { font-size: clamp(2rem, 5vw, 3.3rem); margin: .4rem 0 .8rem; }
+.hero h1 em { color: #ffd27a; }
+.hero p { max-width: 64ch; color: var(--on-green-soft); margin: 0; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.4rem; }
+.stat { border: 1px solid rgba(255,253,247,.22); border-radius: 999px; padding: 6px 14px; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+.stat b { color: #ffd27a; font-weight: 700; }
+section { padding-block: 2.6rem 0; }
+.sec-head { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1.2rem; }
+.sec-head h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.sec-head p { margin: 0; color: var(--soft); max-width: 70ch; }
+.sec-head .eyebrow { color: var(--sun-ink); }
+.rhythm { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.day { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.day .d { font-weight: 700; font-size: 13px; }
+.day .t { color: var(--soft); font-size: 13.5px; }
+.styles { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.style { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; }
+.mock { aspect-ratio: 16 / 9; max-width: 100%; position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 14px; }
+.style .in { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; }
+.style h3 { font-size: 1.2rem; }
+.style p { margin: 0; color: var(--soft); font-size: 14px; }
+.refs { font-size: 12.5px; color: var(--sun-ink); font-weight: 600; }
+.mA { background: linear-gradient(180deg, #e9b866 0%, #c9773a 45%, #3b4a2c 100%); }
+.mA span { font-family: var(--display); font-style: italic; color: #fffdf7; font-size: 1.5rem; }
+.mB { background: linear-gradient(180deg, #9fd0e6 0%, #cfe7ef 55%, #2f7d5a 56%, #1f5e3b 100%); align-items: flex-start; }
+.mB span { font: 800 2.2rem/0.9 var(--body); color: #fffdf7; letter-spacing: -.02em; text-shadow: 0 2px 10px rgba(0,0,0,.2); }
+.mC { background: #ebe4d1; justify-content: center; align-items: center; }
+.mC .pc { background: #fffdf7; padding: 6px 6px 18px; transform: rotate(-4deg); box-shadow: 0 6px 18px rgba(0,0,0,.15); }
+.mC .pc i { display: block; width: 110px; height: 70px; background: linear-gradient(180deg,#8dbb7d,#1f5e3b); }
+.mC .st { position: absolute; right: 18%; top: 14%; width: 34px; height: 40px; background: #f5a623; outline: 3px dashed #fffdf7; outline-offset: -5px; transform: rotate(6deg); }
+.mD { background: #143f28; display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; padding: 6px; }
+.mD i { border-radius: 3px; }
+.mE { background: #1f5e3b; gap: 6px; align-items: stretch; padding: 12px; }
+.mE .sl { flex: 1; border-radius: 6px; background: #fffdf7; padding: 8px; display: flex; flex-direction: column; gap: 4px; }
+.mE .sl:first-child { background: #f5a623; }
+.mE .tab { align-self: flex-start; background: #1f5e3b; color: #fffdf7; font: 700 9px/1 var(--body); padding: 3px 6px; border-radius: 4px; }
+.mE .sl:first-child .tab { background: #143f28; }
+.mE .ln { height: 5px; border-radius: 3px; background: rgba(27,48,34,.25); }
+.mE .ln.s { width: 60%; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 12px; font-size: 13px; color: var(--soft); }
+.chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
+.f-static { background: var(--sea-pale); color: var(--static-ink); }
+.f-carousel { background: var(--green); color: var(--on-green); }
+.f-reel { background: var(--sun); color: #143f28; }
+.month-scroll { overflow-x: auto; }
+.month { display: grid; grid-template-columns: repeat(7, minmax(118px, 1fr)); gap: 6px; min-width: 840px; }
+.dow { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--soft); padding: 0 4px 4px; }
+.cell { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; min-height: 96px; padding: 8px; display: flex; flex-direction: column; gap: 5px; }
+.cell.empty { background: transparent; border-style: dashed; }
+.cell .n { font-size: 12.5px; font-weight: 700; color: var(--soft); font-variant-numeric: tabular-nums; }
+.cell a { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 4px; }
+.cell a .tt { font-size: 12.5px; line-height: 1.3; }
+.cell a:hover .tt, .cell a:focus-visible .tt { text-decoration: underline; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem; }
+.filters button { font: 600 13.5px var(--body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.week { margin-bottom: 1.8rem; }
+.week h3 { font-size: 1.25rem; margin-bottom: .8rem; }
+.week h3 small { font: 600 13px var(--body); color: var(--soft); margin-left: 8px; }
+.posts { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.post { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; scroll-margin-top: 16px; }
+.post:target { outline: 2px solid var(--sun); }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: 13px; color: var(--soft); }
+.meta .date { font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.pill { font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; }
+.post h4 { font: 400 1.18rem/1.25 var(--display); margin: 0; text-wrap: balance; }
+.post p { margin: 0; font-size: 14px; }
+.lbl { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--soft); display: block; margin-bottom: 2px; }
+.slides { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; counter-reset: s; }
+.slides li { font-size: 13.5px; display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; }
+.slides li::before { counter-increment: s; content: counter(s); width: 22px; height: 22px; border-radius: 6px; background: var(--sea-pale); color: var(--green); font-weight: 700; font-size: 12px; display: grid; place-items: center; }
+.caption { background: var(--bg); border-radius: 10px; padding: 10px 12px; font-size: 13.5px; }
+.styletag { color: var(--sun-ink); font-weight: 600; font-size: 13px; }
+.note { margin-top: 4px; font-size: 12.5px; color: var(--sun-ink); background: var(--sun-pale); border-radius: 8px; padding: 6px 10px; }
+.checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; padding-bottom: 3rem; }
+.checks div { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-size: 14px; }
+.checks h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.checks p { margin: 0; color: var(--soft); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+@media (max-width: 420px) { .posts { grid-template-columns: minmax(0, 1fr); } }
+
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; }
+img { max-width:100%; }
+.designs { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(150px, 46%); gap:8px; overflow-x:auto; padding-bottom:6px; scroll-snap-type:x mandatory; }
+.designs a { display:block; scroll-snap-align:start; text-decoration:none; color:var(--soft); font-size:12px; }
+.designs img { display:block; width:100%; height:auto; border-radius:8px; border:1px solid var(--line); }
+.designs span { display:block; margin-top:4px; }
+.chip.f-done { background:var(--sun); color:#143f28; }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Sebu Sanctuary · Social media · December 2026</div>
+    <h1>Coming soon to <em>Lake Sebu</em></h1>
+    <p>This month we build curiosity for Sebu Sanctuary without giving an opening date, and we make followers fall for Lake Sebu itself: the falls, the lakes, the food and Tboli culture. Every post ends by asking people to follow for news.</p>
+    <div class="stats">
+      <span class="stat"><b>23</b> posts</span>
+      <span class="stat"><b>11</b> static</span>
+      <span class="stat"><b>7</b> carousels (5 slides)</span>
+      <span class="stat"><b>5</b> reels, one a week</span>
+      <span class="stat">Feed size <b>1080 × 1350</b> · reels <b>1080 × 1920</b></span>
+      <span class="stat">Designs ready: <b>Dec 1 to 3</b></span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Weekly rhythm</span>
+    <h2>Five posts a week</h2>
+    <p>The same days each week, so followers learn when to expect us. Tuesdays and Saturdays stay free for stories, replies and anything timely.</p>
+  </div>
+  <div class="rhythm">
+    <div class="day"><div class="d">Monday</div><div class="t">Lake Sebu attraction, static</div></div>
+    <div class="day"><div class="d">Wednesday</div><div class="t">Info carousel, 5 slides</div></div>
+    <div class="day"><div class="d">Thursday</div><div class="t">Sebu Sanctuary coming soon, static</div></div>
+    <div class="day"><div class="d">Friday</div><div class="t">Reel of the week</div></div>
+    <div class="day"><div class="d">Sunday</div><div class="t">Weekend mood, static or photo carousel</div></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Graphic styles</span>
+    <h2>Five looks, from the designs you picked</h2>
+    <p>The numbers are the designs you chose on the design board. Every look uses Sebu's own forest green, cream and marigold with Fraunces and Manrope, and Kingsley's real photos, so the feed stays on brand while each post type looks different.</p>
+  </div>
+  <div class="styles">
+    <article class="style">
+      <div class="mock mA"><span>Your highland getaway is taking shape</span></div>
+      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style A</span><h3>Golden hour premium</h3>
+      <p>One full photo at sunrise or sunset, a serif headline with an italic word, small logo, lots of breathing room. For coming soon teasers and Sebu Sanctuary posts.</p>
+      <span class="refs">Your refs: 1, 4, 9, 10, 46, 47, 49</span></div>
+    </article>
+    <article class="style">
+      <div class="mock mB"><span>SEVEN<br>FALLS</span></div>
+      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style B</span><h3>Bold destination</h3>
+      <p>Huge condensed title in the sky, with a person or waterfall overlapping the letters, a script accent word and a marigold info strip. For Lake Sebu attractions.</p>
+      <span class="refs">Your refs: 6, 16, 17, 52, 53, 55, 57</span></div>
+    </article>
+    <article class="style">
+      <div class="mock mC"><div class="pc"><i></i></div><div class="st"></div></div>
+      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style C</span><h3>Postcard scrapbook</h3>
+      <p>Polaroids, stamps, tape and a handwritten line on textured cream paper. For culture, food and "postcards from" posts.</p>
+      <span class="refs">Your refs: 5, 22, 23, 26</span></div>
+    </article>
+    <article class="style">
+      <div class="mock mD"><i style="background:#8dbb7d"></i><i style="background:#f5a623"></i><i style="background:#2f7d5a"></i><i style="background:#ebe4d1"></i><i style="background:#ebe4d1"></i><i style="background:#1f5e3b"></i><i style="background:#c9773a"></i><i style="background:#8dbb7d"></i></div>
+      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style D</span><h3>Moodboard grid</h3>
+      <p>A tight grid of small real moments: coffee, mist, dragonflies, wood, food. One short line of text. For weekend mood posts.</p>
+      <span class="refs">Your refs: 38, 41</span></div>
+    </article>
+    <article class="style">
+      <div class="mock mE"><div class="sl"><span class="tab">GUIDE</span><span class="ln"></span><span class="ln s"></span></div><div class="sl"><span class="tab">STEP 01</span><span class="ln"></span><span class="ln s"></span></div><div class="sl"><span class="tab">STEP 02</span><span class="ln"></span><span class="ln s"></span></div></div>
+      <div class="in"><span class="eyebrow" style="color:var(--sun-ink)">Style E</span><h3>Info series carousel</h3>
+      <p>Five separate slides, each a complete card: a marigold cover with a big question, then numbered "Step 01" or "Tip 01" tabs, a short heading, two or three lines of text and one photo cut-out. The last slide asks people to save and follow.</p>
+      <span class="refs">Based on your carousel example</span></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Month view</span>
+    <h2>December at a glance</h2>
+    <p>Tap a post to jump to its details.</p>
+  </div>
+  <div class="legend"><span class="chip f-static">Static</span><span class="chip f-carousel">Carousel</span><span class="chip f-reel">Reel</span></div>
+  <div class="month-scroll"><div class="month" id="month"></div></div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Post by post</span>
+    <h2>What to make, and what to say</h2>
+    <p>Each card gives the format, style, photos to pull from the Drive folders, the slide plan for carousels and a caption to start from.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter posts by format">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All 23</button>
+    <button type="button" id="f-static" data-f="Static" aria-pressed="false">Static</button>
+    <button type="button" id="f-carousel" data-f="Carousel" aria-pressed="false">Carousels</button>
+    <button type="button" id="f-reel" data-f="Reel" aria-pressed="false">Reels</button>
+  </div>
+  <div id="weeks"></div>
+</section>
+
+<section class="wrap">
+  <div class="sec-head">
+    <span class="eyebrow">Before posting</span>
+    <h2>House rules for the month</h2>
+  </div>
+  <div class="checks">
+    <div><h3>No opening date</h3><p>Say "coming soon" or "follow for news". No month, year, prices or booking links until the owners announce the opening.</p></div>
+    <div><h3>Check travel facts</h3><p>Fares, bus times and routes change. Confirm the General Santos route with JM before the December 2 carousel goes up, and leave fares off the slides.</p></div>
+    <div><h3>Respect Tboli culture</h3><p>Use only photos where people agreed to be shown, credit weavers and ArJay by name, and run culture posts past ArJay first.</p></div>
+    <div><h3>Hashtags</h3><p>#SebuSanctuary #LakeSebu #SouthCotabato #MindanaoTravel #ComingSoon, plus one topic tag such as #SevenFalls, #Tnalak or #TboliCulture.</p></div>
+  </div>
+</section>
+</main>
+
+<script>
+const POSTS = [
+  { d: 1, f: "Static", pillar: "Coming soon", style: "A", refs: "47, 49", designs: [["d1.jpg","Option A · forest green"],["d1b.jpg","Option B · green and marigold"]], title: "Something quiet is coming to Lake Sebu",
+    make: "First post of the month. Wide misty view over Lake Seloton with \"Coming soon\" in large serif and the logo small at the bottom.",
+    photos: "views/ (drone or hill view over Lake Seloton at sunrise)",
+    caption: "High in the hills of South Cotabato, where the mornings are misty and the days are slow, something new is taking shape. Sebu Sanctuary is coming soon. Follow along for the first look." },
+  { d: 2, f: "Carousel", pillar: "Travel guide", style: "E", refs: "G12, G15", designs: [["v1.jpg","1 · Map cover"],["v2.jpg","2 · Step one"],["v3.jpg","3 · Step two"],["v4.jpg","4 · Step three"],["v5.jpg","5 · Last stretch"]], title: "How to get to Sebu Sanctuary from General Santos",
+    slides: [
+      "Cover: real map of the route from GenSan Airport to Sebu Sanctuary, with the title in a map title box",
+      "Step one · GenSan Airport to Koronadal: Yellow Bus Line from the airport bus station to the YBL Marbel station.",
+      "Step two · Koronadal to Surallah: bus or van, about 30 minutes, to the Surallah transport terminal.",
+      "Step three · Surallah up to Lake Sebu: van or jeepney from the Surallah transport terminal; vans leave once full.",
+      "The last stretch · Lake Sebu to Sebu Sanctuary: above Lake Seloton, about 8 minutes from the market. Save for your trip."
+    ],
+    photos: "location/ and explore/ (market, road, lake view); map pins drawn in brand colours",
+    caption: "Planning your first trip up the mountain? Here's the simple way from General Santos to Lake Sebu by bus and van. Save it for later and follow us for more Lake Sebu travel tips.",
+    note: "Confirm the route with JM before posting. Leave fares off the slides because they change." },
+  { d: 3, f: "Static", pillar: "Coming soon", style: "A", refs: "4, 9", designs: [["d3.jpg","Version 1 · drone at dusk"],["d3b.jpg","Version 2 · view from the pool deck"]], title: "Where the mist meets the mountains",
+    make: "Reveal the setting, not the opening. Aerial of the sanctuary grounds and Lake Seloton with a small pin label \"Lake Seloton, Lake Sebu\".",
+    photos: "location/ or views/ (aerial)",
+    caption: "Sebu Sanctuary sits above Lake Seloton, one of Lake Sebu's three lakes. Cool air, birdsong and a view that changes every hour. Coming soon." },
+  { d: 4, f: "Reel", pillar: "Explore Lake Sebu", style: "B", refs: "6", title: "Welcome to Lake Sebu",
+    make: "Re-post the 30-second travel montage we already made for Facebook (beat-cut, no voice-over), cut to 9:16 for Reels. End card: \"Sebu Sanctuary · Coming soon\".",
+    photos: "promo/sebu-facebook render",
+    caption: "Waterfalls, lotus lakes, hot chocolate from local cacao and the music of the Tboli people. Welcome to Lake Sebu. 🎶 Sound on." },
+  { d: 6, f: "Static", pillar: "Explore Lake Sebu", style: "B", refs: "52, 57", title: "Lake Sebu is not just one lake",
+    make: "Big title \"3 LAKES\" over a boat-on-the-lake photo, with a strip naming Lake Sebu, Lake Seloton and Lake Lahit.",
+    photos: "explore/ (lakes, lotus, canoe)",
+    caption: "Lake Sebu is actually three lakes: Lake Sebu, Lake Seloton and Lake Lahit. Calm water, lotus flowers and floating fish farms. Which one would you paddle first?" },
+
+  { d: 7, f: "Static", pillar: "Explore Lake Sebu", style: "B", refs: "17, 16", title: "Seven Falls, 8 minutes from our door",
+    make: "\"SEVEN FALLS\" in huge letters with the waterfall cutting through them. Marigold strip: \"8 min from Sebu Sanctuary\".",
+    photos: "explore/ falls gallery",
+    caption: "Seven waterfalls tumbling through the forest, and a zipline that flies you right over them. Go early for soft light and fewer people, and wear shoes with good grip. Tag who you'd ride the zipline with." },
+  { d: 9, f: "Carousel", pillar: "Explore Lake Sebu", style: "E", refs: "your example", title: "5 things to do in Lake Sebu",
+    slides: [
+      "Cover: \"5 things to do in Lake Sebu\" · Swipe →",
+      "Tip 01 · Seven Falls and the zipline: an easy walk to the first falls, or fly above them.",
+      "Tip 02 · Canoe at sunrise and eat fresh tilapia: the lake is calmest in the morning.",
+      "Tip 03 · Swim at T'Daan Kini: a cool natural pool below forest waterfalls.",
+      "Tip 04 · Sebul Cacao Farm: see the pods harvested and taste hot chocolate made from the farm's own cacao. Save and follow."
+    ],
+    photos: "explore/ (falls, lakes, tdaan-kini, cacao)",
+    caption: "Your Lake Sebu bucket list, sorted. Save this for your trip and share it with the friend who keeps saying \"next year\"." },
+  { d: 10, f: "Static", pillar: "Coming soon", style: "A", refs: "46", title: "Your highland getaway is taking shape",
+    make: "Behind the scenes. Golden-hour build photo, script headline like ref 46. No finish date.",
+    photos: "build/ (construction progress)",
+    caption: "Every beam, every stone, built with local hands and a lot of care. Sebu Sanctuary is taking shape above Lake Seloton. Follow along as we get ready." },
+  { d: 11, f: "Reel", pillar: "Tboli culture", style: "A", refs: "-", title: "The s'loli over Lake Seloton",
+    make: "ArJay plays the Tboli bamboo flute on the hill above the lake. Let the flute play with no music on top. Text: \"Sound on\" then \"ArJay, our cultural advisor\".",
+    photos: "videos/ arjay-flute",
+    caption: "Sound on. ArJay, our cultural and historical advisor, plays the s'loli, a Tboli bamboo flute, on the hill above Lake Seloton." },
+  { d: 13, f: "Carousel", pillar: "Weekend mood", style: "D", refs: "38, 41", title: "A slow weekend in Lake Sebu",
+    slides: [
+      "Grid cover: 8 small moments (mist, coffee, lotus, dragonfly, wood, tilapia, rice fields, pool) · \"A slow weekend in Lake Sebu\"",
+      "Morning: mist over the lake",
+      "Midday: tilapia lunch by the water",
+      "Afternoon: rice fields and butterflies",
+      "Evening: golden light over the hills · Follow for more"
+    ],
+    photos: "nature/, views/, food/ (Kingsley's macro shots work well here)",
+    caption: "No alarms, no rush. Just mist, lake fish and golden hills. This is what a weekend in Lake Sebu feels like." },
+
+  { d: 14, f: "Static", pillar: "Tboli culture", style: "C", refs: "5, 22", title: "T'nalak, the cloth of dreams",
+    make: "Postcard layout: a weaver's hands on the loom in a polaroid, a fabric swatch, a stamp, and a handwritten line \"woven from dreams\".",
+    photos: "culture/ (t'nalak, weaving)",
+    caption: "Tboli women are known as dream weavers. T'nalak is woven by hand from abaca, with patterns that traditionally come to the weaver in her dreams, and one piece can take months. The late Lang Dulay, a National Living Treasure, taught many of today's weavers.",
+    note: "Show ArJay before posting." },
+  { d: 16, f: "Carousel", pillar: "Tboli culture", style: "E", refs: "your example", title: "Visiting Tboli culture with respect",
+    slides: [
+      "Cover: \"Visiting Lake Sebu? 4 ways to respect Tboli culture\"",
+      "Tip 01 · Ask before photographing people, and accept a \"no\" kindly.",
+      "Tip 02 · Buy directly from weavers and makers so your money supports their families.",
+      "Tip 03 · Follow your local guide's lead at homes and cultural sites.",
+      "Tip 04 · Treat t'nalak with respect: don't step on, sit on or cut it. Save and share."
+    ],
+    photos: "culture/ (crafts, dance, weavers who agreed to be shown)",
+    caption: "The highlands around Lake Sebu are the ancestral home of the Tboli people. A few simple ways to visit with respect. Save this and share it with your travel group." },
+  { d: 17, f: "Static", pillar: "Coming soon", style: "A", refs: "10, 1", title: "The people behind Sebu Sanctuary",
+    make: "Split panel portrait of the owners Kingsley and Paul with the quote in serif.",
+    photos: "team/ (Kingsley, Paul)",
+    caption: "\"Leave every person, every community and every place better than you found it.\" Meet Kingsley and Paul, the owners of Sebu Sanctuary. More of the team soon." },
+  { d: 18, f: "Reel", pillar: "Explore Lake Sebu", style: "B", refs: "6, 17", title: "Over the falls",
+    make: "Fast cuts: walk to the first fall, zipline point of view, slow-motion water, ending on the valley view. Bold title \"SEVEN FALLS\" for the first second.",
+    photos: "explore/ falls video and photos",
+    caption: "Seven waterfalls, one zipline and the whole valley below you. Just 8 minutes from Sebu Sanctuary." },
+  { d: 20, f: "Static", pillar: "Explore Lake Sebu", style: "C", refs: "23, 26", title: "Postcards from Sebul Cacao Farm",
+    make: "Hand holding a polaroid of the hot chocolate, with the lake behind. Handwritten note \"best hot chocolate in the hills\".",
+    photos: "explore/ cacao gallery and the Sebul Farm drone video",
+    caption: "Cacao trees, tropical flowers and a café that looks out over the lake. At Sebul Cacao Farm you can see the pods harvested, then taste hot chocolate made from the farm's own cacao." },
+
+  { d: 21, f: "Carousel", pillar: "Travel guide", style: "E", refs: "your example", title: "What to pack for the Lake Sebu highlands",
+    slides: [
+      "Cover: \"Packing for Lake Sebu? Bring these 4\"",
+      "Tip 01 · A light jacket: the air is cooler up here and mornings are misty.",
+      "Tip 02 · Shoes with good grip for the waterfall trails.",
+      "Tip 03 · Water shoes for T'Daan Kini, where the rocks can be slippery.",
+      "Tip 04 · A camera: dragonflies, butterflies and flowers everywhere. Save this for your trip."
+    ],
+    photos: "nature/ (macro), explore/ (trails); flat-lay of the items on a wooden table",
+    caption: "Heading up to the highlands for the holidays? Here's what to pack so you can enjoy every misty morning and waterfall trail." },
+  { d: 23, f: "Static", pillar: "Coming soon", style: "B", refs: "53, 55", title: "A taste of Lake Sebu",
+    make: "Grilled tilapia plate, big title \"TILAPIA\" with the script word \"fresh from the lake\", strip: \"farm-to-table, coming soon\".",
+    photos: "food/ and kitchen/ (Jomer's local dishes)",
+    caption: "Tilapia straight from the lake, grilled the way locals like it. Our kitchen will cook with what Lake Sebu grows and catches. Coming soon." },
+  { d: 24, f: "Static", pillar: "Seasonal", style: "A", refs: "1, 49", title: "Merry Christmas from the highlands",
+    make: "Christmas Eve greeting. Soft morning photo of the lake with a warm serif \"Maligayang Pasko\" and a small logo.",
+    photos: "views/ (misty morning)",
+    caption: "Maligayang Pasko from the hills of Lake Sebu. Wishing you slow mornings, good food and time with the people you love." },
+  { d: 25, f: "Reel", pillar: "Seasonal", style: "A", refs: "46", title: "Christmas morning on Lake Seloton",
+    make: "Calm, slow reel: mist lifting, birdsong, sunlight on the water. 15 to 20 seconds, gentle music. Schedule it ahead.",
+    photos: "videos/ (drone, lake, rain on pool)",
+    caption: "Christmas morning, the highland way. 🎄" },
+  { d: 27, f: "Carousel", pillar: "Weekend mood", style: "D", refs: "38, 41", title: "Rice fields and mountain walks, right from our door",
+    slides: [
+      "Grid cover: trail, rice terraces, forest, butterflies · \"Walks right from our door\"",
+      "Early morning: mist and birdsong",
+      "Through farmland and rice fields",
+      "Into the forest",
+      "Golden light over the hills · Follow for more"
+    ],
+    photos: "nature/, views/ (rice fields, trails)",
+    caption: "Trails behind Sebu Sanctuary lead through farmland, rice fields and forest. Mist in the morning, golden hills in the evening." },
+
+  { d: 28, f: "Carousel", pillar: "Explore Lake Sebu", style: "E", refs: "your example", title: "What to eat in Lake Sebu",
+    slides: [
+      "Cover: \"4 things to eat in Lake Sebu\"",
+      "Tip 01 · Tilapia, the local speciality, grilled or fried.",
+      "Tip 02 · Marang and other tropical fruit at the town market.",
+      "Tip 03 · Street food on the grill at the Lake Sebu market.",
+      "Tip 04 · Hot chocolate at Sebul Cacao Farm. Save this for your trip."
+    ],
+    photos: "food/, explore/ (market, cacao)",
+    caption: "Come hungry. Here's what to eat when you visit Lake Sebu. Which would you try first?" },
+  { d: 30, f: "Static", pillar: "Coming soon", style: "A", refs: "2", title: "Do not disturb: slow mornings, coming soon",
+    make: "Door-hanger mock-up like ref 2: a cream Sebu Sanctuary hanger on a wooden door that reads \"Do not disturb · slow morning in progress\".",
+    photos: "rooms/ (door, bedroom detail)",
+    caption: "Our favourite sign is almost ready to hang. Slow mornings at Sebu Sanctuary are coming soon." },
+  { d: 31, f: "Reel", pillar: "Coming soon", style: "A", refs: "47", title: "This year at Sebu Sanctuary",
+    make: "Year-end recap: the build, the team, the lake, the falls, ending on \"See you soon at Sebu Sanctuary\". No opening date.",
+    photos: "build/, team/, views/, videos/",
+    caption: "From a hillside above Lake Seloton to a place that's almost ready to welcome you. Thank you for following along this year. See you soon at Sebu Sanctuary." }
+];
+const STYLE_NAMES = { A: "Golden hour premium", B: "Bold destination", C: "Postcard scrapbook", D: "Moodboard grid", E: "Info series carousel" };
+const DOW = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
+const fmtClass = f => "f-" + f.toLowerCase();
+const dayName = d => DOW[(d + 0) % 7]; /* Dec 1 2026 is a Tuesday: (1+0)%7=1 -> Tue */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+const month = document.getElementById("month");
+let html = DOW.map(d => `<div class="dow">${d}</div>`).join("") + `<div class="cell empty" aria-hidden="true"></div>`;
+for (let d = 1; d <= 31; d++) {
+  const p = POSTS.find(x => x.d === d);
+  html += `<div class="cell"><span class="n">${d}</span>${p ? `<a href="#post-${d}"><span class="chip ${fmtClass(p.f)}">${p.f}</span><span class="tt">${esc(p.title)}</span></a>` : ""}</div>`;
+}
+const trailing = (7 - ((1 + 31) % 7)) % 7;
+for (let i = 0; i < trailing; i++) html += `<div class="cell empty" aria-hidden="true"></div>`;
+month.innerHTML = html;
+
+const WEEKS = [["Week 1", "Dec 1 to 6", 1, 6], ["Week 2", "Dec 7 to 13", 7, 13], ["Week 3", "Dec 14 to 20", 14, 20], ["Week 4 · Christmas", "Dec 21 to 27", 21, 27], ["Week 5 · Year end", "Dec 28 to 31", 28, 31]];
+const card = p => `<article class="post" id="post-${p.d}" data-f="${p.f}">
+  <div class="meta"><span class="date">${dayName(p.d)} · Dec ${p.d}</span><span class="chip ${fmtClass(p.f)}">${p.f}</span><span class="pill">${esc(p.pillar)}</span>${p.designs ? '<span class="chip f-done">Designed</span>' : ""}</div>
+  <h4>${esc(p.title)}</h4>
+  ${p.designs ? `<div class="designs">${p.designs.map(([f, l]) => `<a href="designs/${f}" target="_blank" rel="noopener"><img src="designs/${f}" alt="${esc(l)}" loading="lazy" width="1080" height="1350"><span>${esc(l)}</span></a>`).join("")}</div>` : ""}
+  <span class="styletag">Style ${p.style} · ${STYLE_NAMES[p.style]}${p.refs && p.refs !== "-" ? ` · refs ${esc(p.refs)}` : ""}</span>
+  ${p.make ? `<p>${esc(p.make)}</p>` : ""}
+  ${p.slides ? `<div><span class="lbl">Slides</span><ol class="slides">${p.slides.map(s => `<li><span>${esc(s)}</span></li>`).join("")}</ol></div>` : ""}
+  <p><span class="lbl">Photos</span>${esc(p.photos)}</p>
+  <div class="caption"><span class="lbl">Caption</span>${esc(p.caption)}</div>
+  ${p.note ? `<div class="note">${esc(p.note)}</div>` : ""}
+</article>`;
+document.getElementById("weeks").innerHTML = WEEKS.map(([name, range, a, b]) =>
+  `<div class="week" data-week><h3>${name}<small>${range}</small></h3><div class="posts">${POSTS.filter(p => p.d >= a && p.d <= b).map(card).join("")}</div></div>`).join("");
+
+const buttons = [...document.querySelectorAll(".filters button")];
+buttons.forEach(b => b.addEventListener("click", () => {
+  buttons.forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  const f = b.dataset.f;
+  document.querySelectorAll(".post").forEach(el => el.hidden = !(f === "all" || el.dataset.f === f));
+  document.querySelectorAll("[data-week]").forEach(w => w.hidden = !w.querySelector(".post:not([hidden])"));
+}));
+</script>
+</body>
+</html>
